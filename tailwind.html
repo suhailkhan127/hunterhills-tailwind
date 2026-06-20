@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en" class="page-template-full ">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Google Font goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="src/output.css" rel="stylesheet">
+    <link href="css/atf.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+        // Lazy Load Start
+        document.addEventListener("DOMContentLoaded", function () { var e, n = document.querySelectorAll(".lazy"); function t() { e && clearTimeout(e), e = setTimeout(function () { for (var e = window.pageYOffset, o = 0; o < n.length; o++)n[o].offsetTop < window.innerHeight + e && (n[o].src = n[o].dataset.src, n[o].classList.remove("lazy")); 0 == n.length && (document.removeEventListener("scroll", t), window.removeEventListener("resize", t), window.removeEventListener("orientationChange", t)) }, 20) } document.addEventListener("scroll", t), window.addEventListener("resize", t), window.addEventListener("orientationChange", t) });
+        // Lazy Load End
+        // webp format detection
+        /*! modernizr 3.6.0 (Custom Build) | MIT *
+        * https://modernizr.com/download/?-webp-setclasses !*/
+        !function (e, n, A) { function o(e, n) { return typeof e === n } function t() { var e, n, A, t, a, i, l; for (var f in r) if (r.hasOwnProperty(f)) { if (e = [], n = r[f], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (A = 0; A < n.options.aliases.length; A++)e.push(n.options.aliases[A].toLowerCase()); for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)i = e[a], l = i.split("."), 1 === l.length ? Modernizr[l[0]] = t : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), Modernizr[l[0]][l[1]] = t), s.push((t ? "" : "no_") + l.join("-")) } } function a(e) { var n = u.className, A = Modernizr._config.classPrefix || ""; if (c && (n = n.baseVal), Modernizr._config.enableJSClass) { var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)"); n = n.replace(o, "$1" + A + "js$2") } Modernizr._config.enableClasses && (n += " " + A + e.join(" " + A), c ? u.className.baseVal = n : u.className = n) } function i(e, n) { if ("object" == typeof e) for (var A in e) f(e, A) && i(A, e[A]); else { e = e.toLowerCase(); var o = e.split("."), t = Modernizr[o[0]]; if (2 == o.length && (t = t[o[1]]), "undefined" != typeof t) return Modernizr; n = "function" == typeof n ? n() : n, 1 == o.length ? Modernizr[o[0]] = n : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), Modernizr[o[0]][o[1]] = n), a([(n && 0 != n ? "" : "no_") + o.join("-")]), Modernizr._trigger(e, n) } return Modernizr } var s = [], r = [], l = { _version: "3.6.0", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var A = this; setTimeout(function () { n(A[e]) }, 0) }, addTest: function (e, n, A) { r.push({ name: e, fn: n, options: A }) }, addAsyncTest: function (e) { r.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = l, Modernizr = new Modernizr; var f, u = n.documentElement, c = "svg" === u.nodeName.toLowerCase(); !function () { var e = {}.hasOwnProperty; f = o(e, "undefined") || o(e.call, "undefined") ? function (e, n) { return n in e && o(e.constructor.prototype[n], "undefined") } : function (n, A) { return e.call(n, A) } }(), l._l = {}, l.on = function (e, n) { this._l[e] || (this._l[e] = []), this._l[e].push(n), Modernizr.hasOwnProperty(e) && setTimeout(function () { Modernizr._trigger(e, Modernizr[e]) }, 0) }, l._trigger = function (e, n) { if (this._l[e]) { var A = this._l[e]; setTimeout(function () { var e, o; for (e = 0; e < A.length; e++)(o = A[e])(n) }, 0), delete this._l[e] } }, Modernizr._q.push(function () { l.addTest = i }), Modernizr.addAsyncTest(function () { function e(e, n, A) { function o(n) { var o = n && "load" === n.type ? 1 == t.width : !1, a = "webp" === e; i(e, a && o ? new Boolean(o) : o), A && A(n) } var t = new Image; t.onerror = o, t.onload = o, t.src = n } var n = [{ uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=", name: "webp" }, { uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==", name: "webp.alpha" }, { uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA", name: "webp.animation" }, { uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=", name: "webp.lossless" }], A = n.shift(); e(A.name, A.uri, function (A) { if (A && "load" === A.type) for (var o = 0; o < n.length; o++)e(n[o].name, n[o].uri) }) }), t(), a(s), delete l.addTest, delete l.addAsyncTest; for (var p = 0; p < Modernizr._q.length; p++)Modernizr._q[p](); e.Modernizr = Modernizr }(window, document);
+        // webp format detection end
+    </script>
+
+    <style type="text/css">
+        .lazy {
+            background-image: none !important;
+        }
+
+        .edit_mode .curve_top,
+        .edit_mode .curve_bot {
+            mask-image: none !important;
+            -webkit-mask-image: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .edit_mode .ui-dialog-content.ui-widget-content {
+            height: 70vh !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+<div class="menu-overlay ">
+    <div class="blackbox" style="height: 0px;"></div>
+</div>
+
+<main class="wrapper">
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-c1">Dental Clinic</h1>
+            <button id="menu-btn" class="md:hidden">☰</button>
+            <ul id="menu" class="hidden md:flex gap-6">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-red-500">Services</a></li>
+                <li><a href="#" class="hover:text-yellow-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button onclick="openModal()" class="bg-black text-white px-4 py-2 rounded">
+        Book Appointment
+    </button>
+
+    <div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded w-96">
+            <h2 class="text-lg font-bold mb-4">Appointment</h2>
+            <form action="submit.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" class="border p-2 w-full mb-2">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded w-full">Submit</button>
+            </form>
+            <button onclick="closeModal()" class="mt-2 text-red-500">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("modal").classList.remove("hidden");
+        }
+        function closeModal() {
+            document.getElementById("modal").classList.add("hidden");
+        }
+    </script>
+
+
+    <button class="btn-primary bg-primary">Test Button</button>
+    <h2 class="c1">section-title 12</h2>
+
+
+    <h2 class=" text-ct">This uses Roboto font</h2>
+    <h2 class="font-f2 text-ct">This uses Abhaya Libre font</h2>
+    <br><br>
+
+    <div class="bg-c2 text-cf p-4">Color Block</div>
+    <div class="bg-bg1 p-4">Transparent Yellow Overlay</div>
+    <br><br>
+
+    <div class="bg-grad-1 p-4 text-black">Gradient 1</div>
+    <br>
+
+    <div class="rounded">This has 4px border radius</div>
+    <br>
+
+    <div
+        class="relative before:absolute before:inset-0 before:bg-gradient-to-b before:from-transparent before:to-[#C9A14A] before:opacity-10">
+        Content over gradient overlay
+    </div>
+
+
+    <div class="bg2 p-6 radius grad1">
+        <h1>Heading with Gradient Overlay</h1>
+        <p class="text-c1 ">This is body text with Roboto font.</p>
+    </div>
+
+    <div class="grad2 p-6 radius">
+        <h2 class="font-f2 text-c3">This is a heading with Abhaya Libre font</h2>
+        <p class="text-c4">Gradient 2 background</p>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br>
+
+
+    <!-- Syed GUI - global_header/templates/header -->
+    <header class="header default_sticky " data-top="80" style="display: none;">
+        <style type="text/css">
+            .edit_mode .header {
+                position: static !important;
+            }
+        </style>
+
+        <!-- mobile/tablet start -->
+        <div class="mobile_header d-block d-lg-none">
+            <!-- <div class="top">
+            <div class="dropdown mobile-call-menu">
+                <span class="flex span-toggle-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <em class="icon-left"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></em>
+                    <div class="filter_label">CONTACT</div>
+                    <img src="images/icons/arrow-nav.svg" class="icon-right" alt="">
+                </span>
+                <div class="dropdown-menu">
+                    <a href="">Darwin</a>
+                    <a href="">Palmerston</a>
+                </div>
+            </div>
+
+            <a href="tel:(08) 8982 0400" class="phone phoneBtnClicks flex">
+                <em><i class="fa fa-phone" aria-hidden="true"></i></em>
+                (08) 8982 0400
+            </a>
+        </div> -->
+            <div class="bot d-flex justify-content-between align-items-center">
+                <a href="/" class="xs_logo"></a>
+
+                <div class="mobile_links d-flex">
+                    <a href="/contact" class="btn btn-two">Contact Us</a>
+                    <!-- <a href="/referral" class="btn-green">REFERRALS</a> -->
+                    <!-- <a href="tel:(02) 9949 8600" class="btn btn-two phoneBtnClicks">
+                    <em><i class="fa fa-phone" aria-hidden="true"></i></em> 
+                    Call Us
+                </a>  -->
+                    <!-- <div class="dropdown mobile-call-menu">
+                    <span class="flex span-toggle-dropdown btn btn-two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="filter_label">Call Us</div>
+                        <span class="icon-right">
+                            <img src="images/icons/arrow-nav-sm.svg" alt="">
+                        </span>
+                    </span>
+
+    
+                    <div class="dropdown-menu">
+
+                        <a href="tel:(604) 449-0239" class="phone phoneBtnClicks flex">
+                            
+                            <span>Vancouver</span>
+                            (604) 449-0239
+                        </a>
+                        <a href="tel:(604) 276-8225" class="phone phoneBtnClicks flex">
+                            
+                            <span>Richmond</span>
+                            (604) 276-8225
+                        </a>
+                    </div>
+                </div> -->
+
+
+                    <a class="xs_main_nav_toggle" data-toggle="collapse" data-target=".xs_main_nav" href="#">
+                        <div class="icon-humburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="xs_main_nav"></div>
+        </div>
+        <!-- mobile/tablet header start -->
+
+        <!-- desktop header start -->
+        <div class="desktop_header d-none d-lg-block">
+            <div class="cnt flex justify-content-between">
+                <a href="/" class="lg_logo">
+                    <img src="images/logo.svg" alt="" title="" />
+                </a>
+
+                <div>
+                    <div class="top">
+                        <div class="header_btns">
+
+                            <!-- <a href="#" class="flex">
+                            <img src="images/icons/icon-dentist.svg" alt="">
+                            REFERRALS
+                        </a>
+                        <a href="#" class="flex">
+                            <em><i class="fa fa-envelope" aria-hidden="true"></i></em>
+                            Contact Us
+                        </a> -->
+
+                            <a href="tel:01202 746428" class="phone phoneBtnClicks flex">
+                                <em><i class="fa fa-phone" aria-hidden="true"></i></em>
+                                01202 746428
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bot" id="lg-header-top">
+                        <div class="syed-main-mega-menu">
+                            <ul class="navigation">
+                                <li class="">
+                                    <a href="#" target="_self" class="">Treatments</a>
+                                    <ul class="has_mega_menu">
+                                        <li class="has_child">
+                                            <a href="">Clear Aligners</a>
+                                            <ul>
+                                                <li><a href="">Invisalign® for Kids</a></li>
+                                                <li><a href="">Angel Aligner</a></li>
+                                                <li><a href="">Dental Monitoring</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has_child">
+                                            <a href="">Braces</a>
+                                            <ul>
+                                                <li><a href="">LightForce 3D Braces</a></li>
+                                                <li><a href="">American Orthotics</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has_child">
+                                            <a href="">Technology</a>
+                                            <ul>
+                                                <li><a href="">Invisalign® for Adults</a></li>
+                                                <li><a href="">Angel Aligner</a></li>
+                                                <li><a href="">Dental Monitoring</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has_child">
+                                            <a href="">Braces</a>
+                                            <ul>
+                                                <li><a href="">LightForce 3D Braces</a></li>
+                                                <li><a href="">American Orthotics</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="has_child">
+                                            <a href="">Technology</a>
+                                            <ul>
+                                                <li><a href="">Invisalign® for Adults</a></li>
+                                                <li><a href="">Angel Aligner</a></li>
+                                                <li><a href="">Dental Monitoring</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" target="_self" class="">Kids</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_self" class="">Costs</a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" target="_self" class="">Success Stories</a>
+                                    <!-- <ul>
+                                    <li>
+                                        <a href="#">Menu Item 01</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Menu Item 01</a>
+                                    </li>
+                                </ul> -->
+                                </li>
+
+                                <li class="">
+                                    <a href="#" target="_self" class="">FOR DENTISTS</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" target="_self" class="">About Us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="btns flex">
+                            <a href="" class="btn btn-two">FREE CONSULTATION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- desktop header end -->
+
+        <!-- sticky btn -->
+        <div class="xs_sticky_hero_btn">
+            <a href="" class="btn btn-two">BOOK AN APPOINTMENT</a>
+        </div>
+
+        <!-- sticky form/nav_form_wrapper -->
+        <!-- sticky form/nav_form_wrapper -->
+    </header>
+    <div class="psuedo_header"></div>
+    <!-- Syed GUI - global_header/templates/header -->
+
+
+    <!-- --- Start Inset_hero --- -->
+    <section class="inset_hero cnt-lg">
+        <div class="flex cnt justify-between flex-row items-center min-h-[640px] relative">
+            <div class="txt-wrap">
+                <div class="txt max-w-[408px]">
+                    <h1 class="text-3xl text-cyan-500 font-bold underline border-amber-400 flex-3">
+                        Tailwind: Hello world!
+                    </h1>
+                    <h1>Donec cras eros tempor diam dolor velit cras.</h1>
+                    <p>Vel vel scelerisque eleifend <a href=""> ipsum fermentum porttitor</a> luctus feugiat. In
+                        velit urna eget commodo. Enim sit purus consequat justo. </p>
+                </div>
+            </div>
+
+            <div class="img w-1/2 absolute right-0 bottom-[-70px] self-end text-right" style="background-image: url(images/sbs-1.jpg);">
+                <img src="images/sbs-1.jpg" alt="" title="">
+            </div>
+        </div>
+    </section>
+    <!-- --- End Inset_hero --- -->
+
+
+    <!-- sbs flip -->
+    <section class="sbs flip">
+        <div class="flex cnt">
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h2>How does <strong>Invisalign® work?</strong></h2>
+
+                    <p>At the start of Invisalign® treatment, our Invisalign® expert uses state-of-the-art computer
+                        software to design a plan for moving your teeth from their current positions into the best
+                        possible alignment. With your treatment broken into several stages, we'll have you wear a
+                        different set of clear aligners every few weeks to accomplish gradual movement.</p>
+
+                    <p>Your Invisalign® clear aligners should be worn day and night (minimum 22 hours per day) and
+                        you will remove them only to eat, drink, brush and floss. As you replace each aligner with
+                        the next in the series, your teeth will move, little by little, until they have straightened
+                        to the final position we have prescribed. You will come in for check-ups every 8-10 weeks to
+                        monitor your progress and to receive your next set of aligners.</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img class="lazy" data-src="images/sbs-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- sbs flip end -->
+
+
+    <!-- sbs flip -->
+    <section class="sbs">
+        <div class="flex cnt">
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h2>How does <strong>Invisalign® work?</strong></h2>
+
+                    <p>At the start of Invisalign® treatment, our Invisalign® expert uses state-of-the-art computer
+                        software to design a plan for moving your teeth from their current positions into the best
+                        possible alignment. With your treatment broken into several stages, we'll have you wear a
+                        different set of clear aligners every few weeks to accomplish gradual movement.</p>
+
+                    <p>Your Invisalign® clear aligners should be worn day and night (minimum 22 hours per day) and
+                        you will remove them only to eat, drink, brush and floss. As you replace each aligner with
+                        the next in the series, your teeth will move, little by little, until they have straightened
+                        to the final position we have prescribed. You will come in for check-ups every 8-10 weeks to
+                        monitor your progress and to receive your next set of aligners.</p>
+                </div>
+            </div>
+
+            <div class="img">
+                <img class="lazy" data-src="images/sbs-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- sbs flip end -->
+
+
+
+    <!-- --- Start plain_content 3-cols ----  -->
+    <section class="plain_content bg_grad">
+        <div class="cnt">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title_sec">
+                        <h2>The Benefits of <strong>Invisalign®?</strong></h2>
+                        <p>Palmerston, Yarrawonga and further afield, Invisalign®is an easy choice for orthodontic
+                            treatment. Invisalign®offers so many benefits, including:
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Fewer Attachments</h3>
+                    <p>Because your treatment is completely custom to you, and planned from start to finish by
+                        digital technology, LightForce™ is the most precise and efficient brace treatment available
+                        on the market.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Less Prone to Staining</h3>
+                    <p>Customised for your precise teeth, LightForce™ 3D braces require fewer adjustments to achieve
+                        results, which means fewer visits to our practice and time away from work or school.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Discreet</h3>
+                    <p>Invisalign® clear aligners are not permanently attached to your teeth. This means you can
+                        take
+                        them out to eat, brush your teeth, or enjoy active sports.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h3>Fewer Attachments</h3>
+                    <p>Because your treatment is completely custom to you, and planned from start to finish by
+                        digital technology, LightForce™ is the most precise and efficient brace treatment available
+                        on the market.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Less Prone to Staining</h3>
+                    <p>Customised for your precise teeth, LightForce™ 3D braces require fewer adjustments to achieve
+                        results, which means fewer visits to our practice and time away from work or school.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Discreet</h3>
+                    <p>Invisalign® clear aligners are not permanently attached to your teeth. This means you can
+                        take
+                        them out to eat, brush your teeth, or enjoy active sports.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="space_botm"></div>
+    <!-- --- End plain_content 3-cols ----  -->
+
+
+    <!-- sbs_bgcolor -->
+    <section class="sbs bgcolor cnt-lg">
+        <div class="flex">
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h2>How does
+                        <strong>Invisalign® work?</strong>
+                    </h2>
+                    <p>At the start of <a href="">Invisalign® treatment,</a> our Invisalign® expert uses
+                        state-of-the-art computer software to design a plan for moving your teeth from their current
+                        positions into the best possible alignment. With your treatment broken into several stages,
+                        we'll have you wear a different set of clear aligners every few weeks to accomplish gradual
+                        movement. </p>
+                    <a href="" class="btn btn-two">btn</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img class="lazy" data-src="images/sbs-3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- sbs_bgcolor end -->
+
+
+    <!-- sbs_bgcolor flip -->
+    <section class="sbs bgcolor flip cnt-lg">
+        <div class="flex">
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h2>How does
+                        <strong>Invisalign® work?</strong>
+                    </h2>
+                    <p>At the start of <a href="">Invisalign® treatment,</a> our Invisalign® expert uses
+                        state-of-the-art computer software to design a plan for moving your teeth from their current
+                        positions into the best possible alignment. With your treatment broken into several stages,
+                        we'll have you wear a different set of clear aligners every few weeks to accomplish gradual
+                        movement. </p>
+                    <a href="" class="btn">btn</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img class="lazy" data-src="images/sbs-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- sbs_bgcolor end -->
+
+
+    <!-- // -- Start Video section --  -->
+    <section class="inset_video cnt-lg">
+        <a class="video" data-lity="data-lity" href="https://www.youtube.com/watch?v=uDdjIuGJnrg">
+            <img src="images/video-img.jpg" />
+            <div class="wrap">
+                <div class="play-icon">
+                    <span class="play-circle">
+                        <i class="fa fa-play"></i>
+                        <!-- <img src="images/icons/icon-play.svg" alt=""> -->
+                    </span>
+                    <span class="play-txt">Play Video</span>
+                </div>
+            </div>
+        </a>
+    </section>
+    <div class="space_botm"></div>
+    <!-- // -- End Video section --  -->
+
+
+
+    <!-- --- Start faqs ---  -->
+    <section class="faqs">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Invisalign <strong>FAQ</strong> </h2>
+            </div>
+
+            <div class="accordion_container">
+                <div class="item">
+                    <h3>Will my teeth be straight after treatment?</h3>
+                    <div class="accordion_body">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>Is Invisalign treatment painful?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>How do I look after my aligners?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>Is Invisalign treatment painful?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space_botm"></div>
+    <!-- --- End faqs --- -->
+
+
+    <!-- --- Start faqs bg_color ---  -->
+    <section class="faqs bg_color cnt-lg">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Invisalign <strong>FAQ</strong> </h2>
+            </div>
+
+            <div class="accordion_container">
+                <div class="item">
+                    <h3>Will my teeth be straight after treatment?</h3>
+                    <div class="accordion_body">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>Is Invisalign treatment painful?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>How do I look after my aligners?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3>Is Invisalign treatment painful?</h3>
+                    <div class="accordion_body" style="display: none;">
+                        <p>
+                            The best way to clean your aligners is by brushing and rinsing them in lukewarm water
+                            and using special cleaning tablets. After eating it is important that you brush your
+                            teeth before you re-insert your
+                            aligners. This has two benefits; it keeps your teeth clean and stops food discolouring
+                            the aligners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space_botm"></div>
+    <!-- --- End faqs --- -->
+
+
+    <!-- --- Start inset_ctas ---  -->
+    <section class="inset_ctas">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Treatments</h2>
+                <p>Dolor auctor orci euismod eu mauris a. Quis pulvinar sem scelerisque felis eu faucibus turpis
+                    blandit vehicula. Nisl velit mauris pharetra nunc sollicitudin felis id vulputate. Sit vel proin
+                    sit varius pharetra accumsan.</p>
+            </div>
+
+            <div class="row ctas-slider">
+                <div class="item">
+                    <a href="" class="box">
+                        <div class="img">
+                            <img src="images/cta-1.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Invisalign</h3>
+                            <h2>Donec cras eros tempor
+                                <strong>vitae donec</strong>
+                            </h2>
+                            <!-- <p>Scelerisque ipsum enim donec nibh aliquet dignissim adipiscing. </p> -->
+                            <span class="link">DISCOVER MORE</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="box">
+                        <div class="img">
+                            <img src="images/cta-2.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Clear Aligners</h3>
+                            <h2>A clear path
+                                <strong>to your best smile</strong>
+                            </h2>
+                            <p>Get straight teeth without braces from Torque Orthodontics. We’re Diamond Invisalign®
+                                provider and experience counts when choosing your Doctor.</p>
+                            <span class="link">DISCOVER MORE</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="box">
+                        <div class="img">
+                            <img src="images/cta-3.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Clear Aligners</h3>
+                            <h2>A clear path
+                                <strong>to your best smile</strong>
+                            </h2>
+                            <p>Get straight teeth without braces from Torque Orthodontics. We’re Diamond Invisalign®
+                                provider and experience counts when choosing your Doctor.</p>
+                            <span class="link">DISCOVER MORE</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="" class="box">
+                        <div class="img">
+                            <img src="images/cta-1.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Clear Aligners</h3>
+                            <h2>A clear path
+                                <strong>to your best smile</strong>
+                            </h2>
+                            <p>Get straight teeth without braces from Torque Orthodontics. We’re Diamond Invisalign®
+                                provider and experience counts when choosing your Doctor.</p>
+                            <span class="link">DISCOVER MORE</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="ctas-btns">
+                <!-- <a class="btn">DISCOVER MORE</a> -->
+                <div class="ctas-arrows"></div>
+            </div>
+        </div>
+    </section>
+    <div class="space_botm"></div>
+    <!-- --- End inset_ctas ---  -->
+
+
+    <!-- --- Start plain_content 4-cols ----  -->
+    <section class="plain_content bg_color cnt-lg">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Prepare for great results with Invisalign®
+                </h2>
+                <p>We take pride in delivering tailored Invisalign® treatment to help you achieve the smile you’ve
+                    always wanted. Preparation and planning are the foundation of successful clear aligner
+                    treatment, and we ensure you receive the highest level of care from start to finish.</p>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <p>We stay at the forefront of technology in orthodontics to provide you with the best possible
+                        treatments. That’s why we were one of the first practices in Australia to offer LightForce™
+                        3D braces, which are completely revolutionising the way we shape your smile.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <p>We stay at the forefront of technology in orthodontics to provide you with the best possible
+                        treatments. That’s why we were one of the first practices in Australia to offer LightForce™
+                        3D braces, which are completely revolutionising the way we shape your smile.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <p>We stay at the forefront of technology in orthodontics to provide you with the best possible
+                        treatments. That’s why we were one of the first practices in Australia to offer LightForce™
+                        3D braces, which are completely revolutionising the way we shape your smile.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="space_botm"></div>
+    <!-- --- End plain_content 2-cols ----  -->
+
+
+    <!-- ---- Start Meet The Team ---  -->
+    <section class="meet_the_team">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Meet the Team</h2>
+                <p>Netus duis magnis ut habitasse at in massa mi. A dignissim euismod tempus sit sit id hac velit.
+                    Diam quis amet lorem auctor et amet. Ultricies diam maecenas facilisis cras. </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/team-1.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Dr. Bala Neel</h3>
+                            <h4>Specialist Orthodontist</h4>
+                            <p>Dr Bala is a Specialist Orthodontist registered with the GDC. He has over 15 years
+                                experience...</p>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#team_modal_1"
+                                class="link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/team-1.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Dr. Bala Neel</h3>
+                            <h4>Specialist Orthodontist</h4>
+                            <p>Dr Bala is a Specialist Orthodontist registered with the GDC. He has over 15 years
+                                experience...</p>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#team_modal_1"
+                                class="link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/team-1.jpg" alt="" />
+                        </div>
+                        <div class="txt">
+                            <h3>Dr. Bala Neel</h3>
+                            <h4>Specialist Orthodontist</h4>
+                            <p>Dr Bala is a Specialist Orthodontist registered with the GDC. He has over 15 years
+                                experience...</p>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#team_modal_1"
+                                class="link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <div class="space_botm"></div>
+    <!-- ---- End Meet The Team ---  -->
+
+
+    <!-- Team_Modal -->
+    <div class="modal fade team_modal" tabindex="-1" id="team_modal_1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                    <!-- <span aria-hidden="true">×</span> -->
+                    <img src="images/icons/close.svg" alt="" />
+                </button>
+
+                <div class="team_detail">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-12">
+                            <p class="img">
+                                <img src="images/team-modal.jpg" alt="" title="" />
+                            </p>
+                        </div>
+
+                        <div class="col-lg-7 col-md-12 ">
+                            <div class="box">
+                                <h3>Dr. Bala Neel </h3>
+                                <h4>Specialist Orthodontist</h4>
+
+                                <p>Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio
+                                    conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia
+                                    numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat
+                                    dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis. Fugit
+                                    quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a,
+                                    quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus
+                                    odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus
+                                    voluptatum inceptos? Perspiciatis sodales expedita placeat.
+                                    Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio
+                                    conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia
+                                    numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat
+                                    dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis.</p>
+                                <p>Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a,
+                                    quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus
+                                    odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus
+                                    voluptatum inceptos? Perspiciatis sodales expedita placeat. Mollitia autem
+                                    excepteur quaerat lacus. Ac eleifend aliqua voluptatibus fuga perspiciatis
+                                    blanditiis nisl semper ducimus, accumsan</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team_Modal End -->
+
+
+    <!-- ---- Start blog ---  -->
+    <section class="blog">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Blog</h2>
+                <p>Pretium nunc urna malesuada faucibus est velit. Proin massa pulvinar dolor sit sem duis
+                    consequat. Porta elementum condimentum adipiscing risus congue felis. Aliquet mollis in pharetra
+                    lectus dictum enim.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <a href="" target="_self">
+                        <div class="img" style="background-image: url(images/blog-1.jpg);">
+                            <img src="images/blog-1.jpg" alt="" />
+                        </div>
+                        <div class="box">
+                            <h3>22.06.2025</h3>
+                            <h2>Venenatis porttitor eleifend viverra eget eleifend pretium varius. Aliquet at et
+                                blandit enim. Sit odio pellentesque.</h2>
+                            <p>Tincidunt semper egestas massa lacus varius lacus tristique. Eget a nulla eget
+                                venenatis nulla. Facilisi lacus purus ullamcorper aliquet venenatis massa vitae
+                                augue elit. Placerat consectetur suspendisse eros massa massa nisl accumsan. Massa
+                                diam pellentesque volutpat nisl cursus.</p>
+                            <span class="link">Read More</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <a href="" target="_self">
+                        <div class="img" style="background-image: url(images/blog-2.jpg);">
+                            <img src="images/blog-2.jpg" alt="" />
+                        </div>
+                        <div class="box">
+                            <h3>22.06.2025</h3>
+                            <h2>In morbi enim ullamcorper pulvinar rutrum ut cursus nisi. Tellus nulla massa
+                                sagittis sagittis volutpat suspendisse.</h2>
+                            <p>Amet et blandit dolor nibh. Pretium senectus aenean ornare turpis. Nulla velit amet
+                                mi feugiat. Non felis nisl consectetur quis amet consequat ultrices vel.</p>
+                            <span class="link">Read More</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="cnt">
+        <div class="blog-btns ">
+            <div class="tm-btn">
+                <a href="#" class="btn">DISCOVER MORE</a>
+            </div>
+        </div>
+    </div> -->
+    </section>
+    <div class="space_botm"></div>
+    <!-- ---- End blog ---  -->
+
+
+
+
+
+    <!-- --- Start plain_content ----  -->
+    <section class="plain_content bg_color cnt-lg">
+        <div class="cnt">
+            <h2>Scelerisque adipiscing diam nunc volutpat faucibus lectus.
+                <strong>Cras magna habitasse purus eu fusce varius.</strong>
+            </h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-wrap">
+                        <p>
+                            Invisalign® treatment is an orthodontic treatment method that provides many of our
+                            patients with an alternative to <a href="">traditional braces.</a> Invisalign® treatment
+                            uses a series of clear,
+                            removable aligners that have been custom made to your teeth. Generally you change the
+                            set of aligners you've been wearing once a week and over time your teeth move into their
+                            desired position.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-wrap">
+                        <p>
+                            We have used Invisalign® treatment in our practice since 2000. Our Blue Diamond
+                            Invisalign® status is in recognition of our experience using these aligners. The
+                            aligners are suitable for children, teens
+                            and adults, and in each case they’re comfortable to wear because they’re custom made to
+                            the shape of your teeth and jaws.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-wrap">
+                        <h3>Discreet</h3>
+                        <p>
+                            Ante ut egestas diam nunc integer. Arcu vulputate molestie turpis faucibus vitae semper
+                            risus. Hendrerit ultricies dignissim pulvinar in aliquam non non. Amet tempor proin at
+                            ac adipiscing sed venenatis
+                            nisl. Sit massa proin ultrices massa habitasse. Proin ut ultricies magna at hendrerit
+                            hendrerit volutpat sed lorem. Tellus non placerat diam mattis massa mi habitasse non
+                            sit. Posuere duis ac elit quis
+                            maecenas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-wrap">
+                        <h3>Hygienic</h3>
+                        <p>
+                            Libero sit orci lorem eget eget ipsum parturient aliquam velit. Tincidunt et id commodo
+                            sodales lectus in morbi nunc. Id consequat eget viverra quis neque lacus volutpat ut
+                            aliquet. Egestas morbi dolor
+                            nunc vitae hac pulvinar vitae eu justo. Nibh dictum id erat consectetur aenean. Ante
+                            fringilla imperdiet mattis lacinia lectus.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-wrap">
+                        <h3>Comfortable</h3>
+                        <p>
+                            Eget nulla et sollicitudin quisque ultrices eu a eu sed. Turpis amet eros turpis
+                            fringilla. Scelerisque lacinia diam dignissim viverra sapien. Felis a odio quis justo.
+                            Pharetra tellus sagittis dictumst
+                            praesent lorem nullam aliquam in. Cursus mi netus accumsan massa sollicitudin phasellus
+                            nunc eget. Leo integer tempor quam odio tristique ac ut. Faucibus ultrices sollicitudin
+                            eu ac accumsan proin
+                            sagittis cursus non. Proin semper mollis egestas vitae. Morbi ut varius arcu dolor
+                            tortor quam lacus quis blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="space_botm"></div>
+
+
+    <!-- --- Start before and after ---  -->
+    <section class="before_after">
+        <div class="cnt">
+            <div class="title_sec">
+                <h3>Before & AFTERS</h3>
+                <h2>Creating <strong>Beautiful smiles</strong> </h2>
+                <p>We’ve transformed the smiles of hundreds of happy patients, improving their oral health and
+                    providing an important boost to their confidence.</p>
+            </div>
+        </div>
+        <div class="cnt">
+            <div class="ba_slider row">
+                <div class="item">
+                    <div class="ba_comparision">
+                        <div class="panel-container">
+                            <div class="panel-left">
+                                <img class="bf" src="images/before.jpg" alt="Before &amp; Afters"
+                                    title="Before &amp; Afters" />
+                            </div>
+                            <div class="splitter">
+                                <div class="handle"></div>
+                            </div>
+                            <div class="panel-right">
+                                <img src="images/after.jpg" alt="Before &amp; Afters" title="Before &amp; Afters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt row">
+                        <div class="col-7">
+                            <span>Problem</span>
+                            <p>Crowding and Deep bite</p>
+                        </div>
+                        <div class="col-5">
+                            <span>Treatment</span>
+                            <p>Braces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="ba_comparision">
+                        <div class="panel-container">
+                            <div class="panel-left">
+                                <img class="bf" src="images/before.jpg" alt="Before &amp; Afters"
+                                    title="Before &amp; Afters" />
+                            </div>
+                            <div class="splitter">
+                                <div class="handle"></div>
+                            </div>
+                            <div class="panel-right">
+                                <img src="images/after.jpg" alt="Before &amp; Afters" title="Before &amp; Afters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt row">
+                        <div class="col-7">
+                            <span>Problem</span>
+                            <p>Crowding and Deep bite</p>
+                        </div>
+                        <div class="col-5">
+                            <span>Treatment</span>
+                            <p>Braces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="ba_comparision">
+                        <div class="panel-container">
+                            <div class="panel-left">
+                                <img class="bf" src="images/before.jpg" alt="Before &amp; Afters"
+                                    title="Before &amp; Afters" />
+                            </div>
+                            <div class="splitter">
+                                <div class="handle"></div>
+                            </div>
+                            <div class="panel-right">
+                                <img src="images/after.jpg" alt="Before &amp; Afters" title="Before &amp; Afters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt row">
+                        <div class="col-7">
+                            <span>Problem</span>
+                            <p>Crowding and Deep bite</p>
+                        </div>
+                        <div class="col-5">
+                            <span>Treatment</span>
+                            <p>Braces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="ba_comparision">
+                        <div class="panel-container">
+                            <div class="panel-left">
+                                <img class="bf" src="images/before.jpg" alt="Before &amp; Afters"
+                                    title="Before &amp; Afters" />
+                            </div>
+                            <div class="splitter">
+                                <div class="handle"></div>
+                            </div>
+                            <div class="panel-right">
+                                <img src="images/after.jpg" alt="Before &amp; Afters" title="Before &amp; Afters" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt row">
+                        <div class="col-7">
+                            <span>Problem</span>
+                            <p>Crowding and Deep bite</p>
+                        </div>
+                        <div class="col-5">
+                            <span>Treatment</span>
+                            <p>Braces</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cnt">
+            <div class="ba-btns">
+                <div class="bbtn">
+                    <a href="#" class="btn">DISCOVER MORE</a>
+                </div>
+                <div class="ba-arrows"></div>
+            </div>
+        </div>
+    </section>
+    <div class="space_botm"></div>
+    <!-- --- End before and after ---  -->
+
+
+    <!-- ---- Start reviews ---  -->
+    <section class="reviews">
+        <div class="cnt">
+            <div class="title_sec">
+                <h2>Testimonials </h2>
+                <p>From tailored braces solutions to Invisalign® transformations, discover why so many choose and
+                    trust us with their smile journey.
+                </p>
+            </div>
+
+            <div class="row reviews_slider">
+                <div class="item">
+                    <div class="txt">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Tincidunt sagittis tellus habitant leo vel non nibh interdum vel. Justo consectetur
+                            pretium ut congue. Morbi suspendisse duis est.</p>
+                        <h4>Erik Raynor</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="txt">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>What fantastic Orthodontist! I've just had my brace off after 10 months, and everything
+                            was absolutely perfect from start to finish. The staff are super friendly - they cant do
+                            enough for you and the practice was lovely - it was always immaculately clean. They have
+                            top of the range equipment, and I was even able to see a prediction of what my teeth
+                            would look like once my treatment was finished. Love the little touches like Prosecco at
+                            the end of treatment!! Thanks so much to everyone there, its been a pleasure coming here
+                            and I'm actually going to miss it! I cannot recommend Helix House enough.</p>
+                        <h4>Erik Raynor</h4>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="txt">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Fantastic team!! They are an extremely welcoming, hard-working team that prioritise the
+                            client experience. They make you feel important and make sure that you feel valued. I’m
+                            so thankful to them for all they’ve done for me, and my smile is amazing!! They done a
+                            great job and I would gladly recommend them to any family member or friend.</p>
+                        <h4>Erik Raynor</h4>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="txt">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>I highly recommend Helix House Orthodontics to get specialist care for your teeth. You
+                            can guarantee that they will pay attention to detail and tailor the treatment towards
+                            your specific needs. The team are very polite and friendly, and really treat you as an
+                            individual. I am not one to ever write a review on anything but i feel the need to
+                            express how great helix house is. Here I’ve received the best customer service I’ve ever
+                            experienced.</p>
+                        <h4>Erik Raynor</h4>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="reviews-btns cnt">
+            <!-- <div class="tm-btn">
+            <a href="#" class="btn">DISCOVER MORE</a>
+        </div> -->
+            <div class="reviews-arrows"></div>
+        </div>
+    </section>
+    <!-- ---- End reviews ---  -->
+    <div class="space_botm"></div>
+
+
+    <!-- --- Start sbs_form----  -->
+    <section class="sbs_form cnt-lg">
+        <div class="flex ">
+            <div class="img" style="background-image: url(images/inset-form-bg.jpg);">
+                <img class="lazy" data-src="images/inset-form-sm.jpg" alt="">
+            </div>
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h3>Book Free consultation </h3>
+                    <h2>Start Your <strong>Smile Transformation!</strong>
+                    </h2>
+                    <p>From your very first contact with our specialist practice to the creation of your new smile,
+                        our Treatment Coordinator will be available to offer support at every stage of your
+                        orthodontic journey.</p>
+                    <a href="" class="btn btn-two">BOOK A Free Consultation</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="space_botm"></div>
+    <!-- sbs_form end -->
+
+
+    <!-- SBS Form -->
+    <section class="sbs_form cnt-lg">
+        <div class="flex ">
+            <div class="img" style="background-image: url(images/inset-form-bg.jpg);">
+                <img class="lazy" data-src="images/inset-form-sm.jpg" alt="">
+            </div>
+            <div class="txt-wrap">
+                <div class="txt">
+                    <h3>Book a free Consultation</h3>
+                    <h2>Start Your Smile Transformation Today!</h2>
+
+                    <form method="post" class="ajax_form" novalidate="novalidate">
+                        <!-- Custom fields -->
+                        <input type="hidden" name="custom14" value="" id="fPages_2" />
+                        <input type="hidden" name="custom15" value="" id="fContent_2" />
+                        <input type="hidden" name="custom16" value="" id="fSource_2" />
+                        <input type="hidden" name="custom17" value="" id="fMedium_2" />
+                        <input type="hidden" name="custom18" value="" id="fTerm_2" />
+                        <input type="hidden" name="custom19" value="" id="fCampaign_2" />
+                        <input type="hidden" name="custom20" value="" id="fClientId_2" />
+                        <!-- Custom fields -->
+                        <div class="form-row">
+                            <div class="col-sm-12 form-group anim_lbl">
+                                <label>First Name</label>
+                                <input type="text" name="firstname" class="validate[required] form-control"
+                                    title="Please enter first name" required="" />
+                            </div>
+                            <div class="col-sm-12 form-group anim_lbl">
+                                <label>Last Name</label>
+                                <input type="text" name="lastname" class="validate[required] form-control"
+                                    title="Please enter last name" required="" />
+                            </div>
+                            <div class="col-sm-12 form-group anim_lbl">
+                                <label>E-mail</label>
+                                <input type="email" name="email"
+                                    class="validate[required,custom[email]] form-control"
+                                    title="Please enter a valid email address" required="" />
+                            </div>
+                            <div class="col-sm-12 form-group anim_lbl">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone"
+                                    class="validate[required,maxSize[20]] form-control phone" inputmode="numeric"
+                                    maxlength="20" title="Please enter a valid phone number" required="" />
+                            </div>
+
+                            <!-- <div class="col-sm-12">
+                            <h4>Preferred Location</h4>
+                            <div class="radio_checkbox_styles">
+                                <div>
+                                    <input id="location-1" name="location" type="radio" class="form-check-input"  />
+                                    <label class="form-check-label" for="location-1">GORDON </label>
+                                </div>
+        
+                                <div>
+                                    <input id="location-2" name="location" type="radio" class="form-check-input"  />
+                                    <label class="form-check-label" for="location-2">HUNTSVILLE </label>
+                                </div>
+                            </div>
+                        </div> -->
+
+                            <!-- <div class="col-sm-12 form-group anim_lbl">
+                            <select id="" class="form-control" >
+                                <option value="" selected="">Select a Location</option>
+                                <option value="">Tustin</option>
+                                <option value="">Riverside</option>
+                                <option value="">Perris</option>
+                                <option value="">Lake Elsinore</option>
+                                <option value="">Corona</option>
+                                <option value="">Colton</option>
+                            </select>
+                        </div> -->
+                        </div>
+                        <button type="submit" class="btn btn-two">BOOK A Free Consultation</button>
+                        <p class="privacy">For further information about how we use your data, please see our <a
+                                title="Privacy policy" href="/privacy-policy/" target="_blank">privacy policy</a>.
+                        </p>
+                        <input type="text" name="fake" id="fake" class="fake" />
+                        <input type="hidden" name="action_path" value="/application/themes/_spam_protect.php"
+                            class="action_path" />
+                        <input type="hidden" name="thanks" value="/free-consultation-thank-you/" class="thanks" />
+                        <div class="progress">
+                            <div class="progress-bar-value"></div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SBS Form -->
+
+
+    <!-- <section class="ortho_vs_den">
+    <div class=" cnt">
+        <div class="title_section">
+            <h2>Orthodontist vs Dentist</h2>
+        </div>
+
+        <div class="table_tabs">
+            <ul class="nav nav-tabs">
+                <li><a class="active" data-toggle="tab" href="#tab-1">Qualification and <br>Memberships</a></li>
+                <li><a data-toggle="tab" href="#tab-2" class="">Treatments and <br>Services</a></li>
+                <li><a data-toggle="tab" href="#tab-3" class="">Experience and <br>Training</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane  in active">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Orthodontist</th>
+                                <th>Dentist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Doctor of Dental Surgery (5 years)</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td><em class="fa fa-check"></em></td>
+                            </tr>
+                            <tr>
+                                <td>Minimum of 3 years post-graduate training and exams</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Master of Orthodontics (MOrth)(3 years)</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Member of professional orthodontic bodies, eg. British Orthodontic Society</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab-2" class="tab-pane">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Orthodontist</th>
+                                <th>Dentist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>General 6-month check up</td>
+                                <td></td>
+                                <td><em class="fa fa-check"></em></td>
+                            </tr>
+                            <tr>
+                                <td>Fillings &amp; extractions</td>
+                                <td></td>
+                                <td><em class="fa fa-check"></em></td>
+                            </tr>
+                            <tr>
+                                <td>Cleaning &amp; polishing</td>
+                                <td></td>
+                                <td><em class="fa fa-check"></em></td>
+                            </tr>
+                            <tr>
+                                <td>Advises on overall oral health of teeth and gums </td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td><em class="fa fa-check"></em></td>
+                            </tr>
+                            <tr>
+                                <td>Fitting of orthodontic appliances, such as braces &amp; Invisalign aligners </td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td>Some general dentists may fit braces and Invisalign but they are not specialists in
+                                    orthodontics.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab-3" class="tab-pane">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Orthodontist</th>
+                                <th>Dentist</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Is specifically trained to in the movement of teeth and bite issues</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Recommends and treats patients after assessing overall facial profile</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Uses the latest in orthodontic technology for the benefit of patients</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Attends regular training on developments in the orthodontic industry</td>
+                                <td><em class="fa fa-check"></em></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Is a member of The Invisible Orthodontist (TIO) Network</td>
+                                <td>Not all orthodontists are members of TIO but those that are demonstrate further
+                                    commitment to promoting invisible orthodontic treatment. </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div class="space_botm"></div> -->
+
+
+
+    <!-- --- Start map_wrapper --- -->
+    <section class="map_wrapper ">
+        <div class="cnt">
+            <div class="title_sec">
+                <h3>CONTACT US</h3>
+                <h2>Find our <strong>offices</strong> </h2>
+                <p>We provide orthodontic treatment to our patients at our convenient locations. If you’re looking
+                    to schedule an appointment or discuss your treatment, please contact us directly.</p>
+            </div>
+
+            <div class="dropdown d-none">
+                <a class="btn" href="javascript:void(0)" id="location_btn" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"> Select A Location<em
+                        class="fa fa-chevron-down"></em> </a>
+                <div class="dropdown-menu" aria-labelledby="location_btn">
+                    <ul class="nav nav-pills map_cords">
+                        <li class="nav-item loc" role="presentation" data-lat="51.500087" data-lng="-0.221406">
+                            <a class="show active" data-toggle="pill" data-target="#loc-tab-1" role="tab">Darwin</a>
+                        </li>
+                        <li class="nav-item loc" role="presentation" data-lat="51.489844" data-lng="-0.190277">
+                            <a class=" " data-toggle="pill" data-target="#loc-tab-2" role="tab">Palmerston</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="map-with-tabs">
+                        <div class="map-wrap">
+                            <div class="google_map" id="location_map_1"></div>
+                        </div>
+                    </div>
+
+                    <div class="map_details">
+                        <h4>Poole Orthodontics</h4>
+
+                        <p class="">
+                            <em class="fa-solid fa-location-pin" aria-hidden="true"></em>
+                            38 Lower Blandford Road <br>Poole, Dorset, BH18 8NX
+                        </p>
+
+                        <p class="">
+                            <em class="fa-solid fa-phone" aria-hidden="true"></em>
+                            <a href="tel:0120 2612 787" class="phoneBtnClicks phn"> 0120 2612 787</a>
+                        </p>
+                        <p class="">
+                            <em class="fa-solid fa-envelope" aria-hidden="true"></em>
+                            <a href="mailto:info.pooleorthodontics@gmail.com"
+                                class="">info.pooleorthodontics@gmail.com</a>
+                        </p>
+
+
+                        <h6>
+                            <em class="fa fa-clock" aria-hidden="true"></em>
+                            Opening Hours
+                        </h6>
+                        <dl>
+                            <dt>Monday - Friday</dt>
+                            <dd>09:00am - 18:00pm</dd>
+                            <dt>Saturday</dt>
+                            <dd>9:00am to 15:00pm</dd>
+                        </dl>
+
+                        <p class="open_map">
+                            <a href="#" target="_blank">
+                                <img src="images/icons/icon-open.svg" />
+                                Open in Google Maps
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="map-with-tabs">
+                        <div class="map-wrap">
+                            <div class="google_map" id="location_map_2"></div>
+                        </div>
+                    </div>
+
+                    <div class="map_details">
+                        <h4>Seaview Dental Practice</h4>
+
+                        <p class="">
+                            <em class="fa-solid fa-location-pin" aria-hidden="true"></em>
+                            533 Ashley Road Poole <br>BH14 0BD
+                        </p>
+
+                        <p class="">
+                            <em class="fa-solid fa-phone" aria-hidden="true"></em>
+                            <a href="tel:01202 746428 " class="phoneBtnClicks phn"> 01202 746428 </a>
+                        </p>
+                        <p class="">
+                            <em class="fa-solid fa-envelope" aria-hidden="true"></em>
+                            <a href="mailto:info@seaviewdentalpractice.com"
+                                class="">info@seaviewdentalpractice.com</a>
+                        </p>
+
+
+                        <h6>
+                            <em class="fa fa-clock" aria-hidden="true"></em>
+                            Opening Hours
+                        </h6>
+                        <dl>
+                            <dt>Monday - Friday</dt>
+                            <dd>09:00am - 18:00pm</dd>
+                            <dt>Saturday</dt>
+                            <dd>9:00am to 15:00pm</dd>
+                        </dl>
+
+                        <p class="open_map">
+                            <a href="#" target="_blank">
+                                <img src="images/icons/icon-open.svg" />
+                                Open in Google Maps
+                            </a>
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- --- End map_wrapper --- -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="cnt">
+            <div class="top">
+                <div class="flex">
+                    <div class="col1">
+                        <p class="img">
+                            <a target="_blank" href="https://www.theinvisibleorthodontist.co.uk/"
+                                title="The Invisible Orthodontist">
+                                <img src="images/logo-tio.svg" alt="The Invisible Orthodontist"
+                                    title="The Invisible Orthodontist" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <ul class="social_icons flex">
+                            <li>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" rel="nofollow">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+                <div class="flex">
+                    <div class="col1">
+                        <p>
+                            <span>&copy; Copyright 2025 </span>
+                            <span>Dr Bala Neel</span>
+                            <span>All Rights Reserved</span>
+                        </p>
+                    </div>
+                    <div class="col2">
+                        <ul class="">
+                            <li><a href="">PRIVACY POLICY</a></li>
+                            <li><a href="">TERMS & CONDITIONS</a></li>
+                            <li><a href="">COOKIES POLICY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</main>
+
+<script type="text/javascript">
+    var syed_main_css = document.createElement("link");
+    syed_main_css.rel = "stylesheet";
+    syed_main_css.href = "css/plugins.css";
+    syed_main_css.type = "text/css";
+    document.body.appendChild(syed_main_css);
+</script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCMSE7I8AeHEbCDdzoCV0E1LM5USKBDNio"></script>
+
+<script src="js/plugins.js"></script>
+
+
+</body>
+
+</html>

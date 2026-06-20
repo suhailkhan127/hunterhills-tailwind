@@ -1,0 +1,47 @@
+Watch command
+-----------------
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+
+variable classes
+====================
+<!-- Colors -->
+<p class="text-c1">Dark blue text</p>
+<p class="text-c2">Gold text</p>
+<div class="bg-c3">Teal background</div>
+
+<!-- Fonts -->
+<p class="font-f1">Roboto font</p>
+<p class="font-f2">Abhaya Libre font</p>
+
+<!-- Gradient -->
+<div class="bg-grad-1">Gold gradient</div>
+
+<!-- 4px border radius -->
+<div class="rounded">...</div>  
+
+
+.row
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
+
+
+@apply font-f1
+@apply text-c1
+
+border-right: 1px solid var(--color-c1);
+
+
+
+
+@layer base => HTML elements ki default styling      ==   h1 { font-size: 2rem }
+
+@layer components => Reusable classes                ==   .btn, .card, .grad1
+
+@layer utilities => Single-purpose helper classes    ==   .text-center, .mt-4
+
+
+
+
+
+
+

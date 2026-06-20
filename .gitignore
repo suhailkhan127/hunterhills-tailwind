@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Old/archive folders
+_calc/
+_fms/
+_fms-2022/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.suo
+*.user
+
+# Logs
+*.log
+npm-debug.log*

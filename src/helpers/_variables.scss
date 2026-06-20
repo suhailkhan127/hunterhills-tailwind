@@ -1,0 +1,73 @@
+
+//Fonts 
+$f1: "Roboto", sans-serif;
+$f2: "Abhaya Libre", serif;
+
+
+// COLORS 
+$ct: #333333; // Base color
+$cf: #fff; // White 
+
+$c1: #334148;
+$c2: #E4A600;
+$c3: #5AAB96;  
+$c4: #AEE0BE; 
+$c5: #F0F4F3;  
+
+$bg1: rgba($c2, 20%); 
+ 
+// Gradient
+.grad_1, .grad1{   
+    background: linear-gradient(180deg, #FFDB79 0%, #E4A600 100%);
+}
+.grad_2, .grad2{       
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        inset:0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: url(../images/artwork-1.png);
+    }
+}
+.grad_3, .grad3{       
+    background: linear-gradient(180deg, #455761 34.62%, #334148 100%);
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        inset:0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: url(../images/artwork-2.png);
+    }
+}
+
+.grad4{           
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
+}
+
+.artwork{   
+    position: relative;
+    border: 1px solid $c2;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        width: 4px;
+        height: 80%;
+        @extend .grad1;
+        z-index: 1;
+    }
+}
+
+.radius{
+    border-radius: 4px;
+}
+
+

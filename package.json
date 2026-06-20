@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.0",
+    "@tailwindcss/postcss": "^4.2.0",
+    "postcss": "^8.5.6"
+  }
+}
