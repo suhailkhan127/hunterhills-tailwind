@@ -725,40 +725,122 @@
     </section>
     <!-- ---- End Meet The Team ---  -->
 
-    
-    <!-- Team_Modal --> 
-    <div class="modal fade team_modal" tabindex="-1" id="team_modal_1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal">
-                    <!-- <span aria-hidden="true">×</span> -->
-                    <img src="images/icons/close.svg" alt="" />
-                </button> 
+    <!-- Team Modal -->
+    <div id="team_modal_1" class="team_modal fixed inset-0 z-50 bg-[rgba(235,235,235,0.7)] backdrop-blur-[5px] hidden">
+        <!-- Center Wrapper -->
+        <div class="flex items-center justify-center min-h-screen p-4">
 
-                <div class="team_detail">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-12">
-                            <p class="img"> 
-                                <img src="images/team-1.jpg" alt="" title="" />
+            <!-- Modal Box -->
+            <div class="relative w-full max-w-[1304px] bg-[#ECECEC] rounded shadow-[0_10px_20px_rgba(0,0,0,0.2)]">
+
+                <!-- Close Button -->
+                <button class="close absolute top-5 right-5 z-10 w-[32px] h-[32px] hover:rotate-90 hover:cursor-pointer transition">
+                    <img src="images/icons/close.svg" alt="close">
+                </button>
+
+                <div class="team_detail px-[180px] py-[110px] h-[80vh] overflow-y-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-40">
+                        <div class="w-full lg:w-5/12">
+                            <p class="img">
+                                <img src="images/team-1.jpg" alt="" title="" class="w-full rounded">
                             </p>
                         </div>
 
-                        <div class="col-lg-7 col-md-12 ">
+                        <div class="w-full lg:w-7/12">
                             <div class="box">
-                                <h3>Dr Darin Ballard</h3> 
-                                <h4>Specialist Orthodontist</h4>
+                                <h3 class="mb-[5px] text-[32px] font-normal leading-[130%] tracking-[-0.48px] font-f2 text-c1 capitalize">Dr Darin Ballard</h3>
+                                <h4 class="text-[16px] opacity-60 text-c1 mb-[20px] font-medium leading-[140%] tracking-[0.32px] uppercase">Specialist Orthodontist</h4>
 
                                 <p>Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis. Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a, quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus voluptatum inceptos? Perspiciatis sodales expedita placeat.
                                     Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis.</p>
-                                <p>Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a, quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus voluptatum inceptos? Perspiciatis sodales expedita placeat.  Mollitia autem excepteur quaerat lacus. Ac eleifend aliqua voluptatibus fuga perspiciatis blanditiis nisl semper ducimus, accumsan</p>
+                                <p>Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a, quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus voluptatum inceptos? Perspiciatis sodales expedita placeat. Mollitia autem excepteur quaerat lacus. Ac eleifend aliqua voluptatibus fuga perspiciatis blanditiis nisl semper ducimus, accumsan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // OPEN
+  document.querySelectorAll(".team_modal-open").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const modalId = btn.dataset.modal;
+      const modal = document.getElementById(modalId);
+
+      modal.classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    });
+  });
+
+  // CLOSE BUTTON (FIXED)
+  document.querySelectorAll(".close").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const modal = btn.closest(".team_modal");
+
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    });
+  });
+
+  // BACKDROP CLOSE (IMPORTANT FIX)
+  document.querySelectorAll(".team_modal").forEach(modal => {
+    modal.addEventListener("click", (e) => {
+      modal.classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    });
+  });
+
+  // Stop click from bubbling out of modal box
+  document.querySelectorAll(".team_modal .relative").forEach(box => {
+    box.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  });
+
+});
+</script>
+    
+    <!-- Team_Modal --> 
+    <!-- <div class="modal fade team_modal before:content-[''] before:absolute before:inset-0 before:bg-[rgba(235,235,235,0.7)] before:backdrop-blur-[5px] before:transition-all before:duration-[1200ms]" tabindex="-1" id="team_modal_1">
+        <div class="modal-dialog max-w-[1304px] !-translate-y-1/2 top-1/2 mx-auto">
+            <div class="modal-content shadow-[0_10px_20px_rgba(0,0,0,0.2)] border-0 rounded bg-[#ECECEC] overflow-hidden">
+                <button type="button" class="close top-[30px] right-[35px] absolute z-[1] opacity-100 cursor-pointer w-[32px] h-[32px] transition-all duration-300 hover:rotate-90" data-dismiss="modal">
+                    <img src="images/icons/close.svg" alt="" />
+                </button>
+
+                <div class="team_detail px-[180px] py-[110px] h-[80vh] overflow-y-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-40">
+                        <div class="w-full lg:w-5/12">
+                            <p class="img">
+                                <img src="images/team-1.jpg" alt="" title="" class="w-full rounded" />
+                            </p>
+                        </div>
+
+                        <div class="w-full lg:w-7/12">
+                            <div class="box">
+                                <h3 class="mb-[5px] text-[32px] font-normal leading-[130%] tracking-[-0.48px] font-f2 text-c1 capitalize">Dr Darin Ballard</h3>
+                                <h4 class="text-[16px] opacity-60 text-c1 mb-[20px] font-medium leading-[140%] tracking-[0.32px] uppercase">Specialist Orthodontist</h4>
+
+                                <p>Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis. Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a, quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus voluptatum inceptos? Perspiciatis sodales expedita placeat.
+                                    Ipsa dapibus commodi aliquet, sint! Veniam sed? Laboris, iusto ligula optio conubia, sociis cum alias, justo, leo, odio, facilis quisque. Mattis quia numquam atque. Massa repellat ornare scelerisque modi voluptates, cupidatat dolorum. Iste consectetur nec. Iure. Corrupti eligendi facilisi dis.</p>
+                                <p>Fugit quaerat, mus atque nihil beatae ac necessitatibus in suscipit, mollitia a, quibusdam numquam! Occaecati do, est dis! Eiusmod magnam mollit minus lacus odit. Hymenaeos laboris sollicitudin cum! Mi quos, doloremque facere, quos purus voluptatum inceptos? Perspiciatis sodales expedita placeat. Mollitia autem excepteur quaerat lacus. Ac eleifend aliqua voluptatibus fuga perspiciatis blanditiis nisl semper ducimus, accumsan</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team_Modal End -->
 
 
@@ -766,46 +848,39 @@
     <section class="blog mb-[60px] lg:mb-[160px]"> 
         <div class="container">
             <div class="title_sec mb-[45px] max-w-[870px]">
-                <h2>Blog</h2>
+                <h2 class="mb-[15px]">Blog</h2>
                 <p>Pretium nunc urna malesuada faucibus est velit. Proin massa pulvinar dolor sit sem duis consequat. Porta elementum condimentum adipiscing risus congue felis. Aliquet mollis in pharetra lectus dictum enim.</p>
             </div>
             <div class="grid grid-cols-1 gap-[40px] md:grid-cols-2 lg:grid-cols-2">
                 <div class="">
-                    <a href="" target="_self">
-                        <div class="img" style="background-image: url(images/blog-1.jpg);">
-                            <img src="images/blog-1.jpg" alt="" />
+                    <a href="" target="_self" class="block mb-[50px] border border-c2 rounded">
+                        <div class="img h-[354px] bg-center bg-no-repeat bg-cover rounded" style="background-image: url(images/blog-1.jpg);">
+                            <img src="images/blog-1.jpg" alt="" class="rounded w-full hidden" />
                         </div>
-                        <div class="box">
-                            <h3>22.06.2025</h3>
-                            <h2>Venenatis porttitor eleifend viverra eget eleifend pretium varius. Aliquet at et blandit enim. Sit odio pellentesque.</h2>
-                            <p>Tincidunt semper egestas massa lacus varius lacus tristique. Eget a nulla eget venenatis nulla. Facilisi lacus purus ullamcorper aliquet venenatis massa vitae augue elit. Placerat consectetur suspendisse eros massa massa nisl accumsan. Massa diam pellentesque volutpat nisl cursus.</p>
+                        <div class="box px-[60px] pt-[47px] pb-[60px]">
+                            <h3 class="mb-[21px] text-c1 text-[16px] uppercase opacity-60">22.06.2025</h3>
+                            <h2 class="mb-[15px] text-[32px] font-normal leading-none tracking-[-1.28px] text-c1">Venenatis porttitor eleifend viverra eget eleifend pretium varius. Aliquet at et blandit enim. Sit odio pellentesque.</h2>
+                            <p class="text-ct mb-[37px] line-clamp-3">Tincidunt semper egestas massa lacus varius lacus tristique. Eget a nulla eget venenatis nulla. Facilisi lacus purus ullamcorper aliquet venenatis massa vitae augue elit. Placerat consectetur suspendisse eros massa massa nisl accumsan. Massa diam pellentesque volutpat nisl cursus.</p>
                             <span class="link">Read More</span>
                         </div>
                     </a>
                 </div>
 
                 <div class="">
-                    <a href="" target="_self">
-                        <div class="img" style="background-image: url(images/blog-2.jpg);">
-                            <img src="images/blog-2.jpg" alt="" />
+                    <a href="" target="_self" class="block mb-[50px] border border-c2 rounded">
+                        <div class="img h-[354px] bg-center bg-no-repeat bg-cover rounded" style="background-image: url(images/blog-2.jpg);">
+                            <img src="images/blog-2.jpg" alt="" class="rounded w-full hidden" />
                         </div>
-                        <div class="box">
-                            <h3>22.06.2025</h3>
-                            <h2>In morbi enim ullamcorper pulvinar rutrum ut cursus nisi. Tellus nulla massa sagittis sagittis volutpat suspendisse.</h2>
-                            <p>Amet et blandit dolor nibh. Pretium senectus aenean ornare turpis. Nulla velit amet mi feugiat. Non felis nisl consectetur quis amet consequat ultrices vel.</p>
+                        <div class="box px-[60px] pt-[47px] pb-[60px]">
+                            <h3 class="mb-[21px] text-c1 text-[16px] uppercase opacity-60">22.06.2025</h3>
+                            <h2 class="mb-[15px] text-[32px] font-normal leading-none tracking-[-1.28px] text-c1">In morbi enim ullamcorper pulvinar rutrum ut cursus nisi. Tellus nulla massa sagittis sagittis volutpat suspendisse.</h2>
+                            <p class="text-ct mb-[37px] line-clamp-3">Amet et blandit dolor nibh. Pretium senectus aenean ornare turpis. Nulla velit amet mi feugiat. Non felis nisl consectetur quis amet consequat ultrices vel.</p>
                             <span class="link">Read More</span>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <!-- <div class="container">
-            <div class="blog-btns ">
-                <div class="tm-btn">
-                    <a href="#" class="btn">DISCOVER MORE</a>
-                </div>
-            </div>
-        </div> -->
     </section>
     <!-- ---- End blog ---  -->
 
@@ -1146,77 +1221,70 @@
     <!-- sbs_form end -->
 
 
-    <!-- --- Start map_wrapper --- -->
-    <section class="map_wrapper">
-        <div class="flex cnt-lg">
-            <div class="map_details">
-                <div class="title_sec mb-[45px] max-w-[870px]">
-                    <h2>Visit Us </h2>
-    
-                    <p>Reach out to our team in Hunters Hill today to book an appointment or get answers to your questions.
-                    </p>
+
+    <section class="map_wrapper relative py-[60px] lg:py-[160px] bg-[#F2F2F2] bg-[url('../images/artwork-1.png')] before:content-[''] before:absolute before:bottom-0 before:left-[200px] before:w-[617px] before:h-[481px] before:z-[0] before:bg-[url('../images/artwork-logo.png')] before:bg-contain before:bg-no-repeat"> 
+        <div class="flex cnt-lg justify-between items-start">
+            <div class="map_details w-1/2 pl-[150px] relative">
+                <div class="title_sec mb-[45px] max-w-[420px]">
+                    <h2 class="">Visit Us</h2>
+                    <p class="">Reach out to our team in Hunters Hill today to book an appointment or get answers to your questions.</p>
                 </div>
-    
-                <div class="dropdown d-none">
+
+                <div class="dropdown d-none hidden ">
                     <a class="btn" href="javascript:void(0)" id="location_btn" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false"> Select A Location<em class="fa fa-chevron-down"></em> </a>
                     <div class="dropdown-menu" aria-labelledby="location_btn">
                         <ul class="nav nav-pills map_cords">
-    
                             <li class="nav-item loc" role="presentation" data-lat="51.48130736915778"
                                 data-lng="-2.6342748572519485">
                                 <a data-toggle="pill" data-target="#loc-tab-1" role="tab" aria-selected="true"
                                     class="active">Contact Us</a>
                             </li>
-                            <!-- <li class="nav-item loc" role="presentation" data-lat="51.489844" data-lng="-0.190277">
-                                    <a class=" " data-toggle="pill" data-target="#loc-tab-2" role="tab">Palmerston</a>
-                                </li> -->
                         </ul>
                     </div>
                 </div>
-    
-                <p>
+
+                <p class="flex items-start gap-[10px]">
                     <img src="images/icons/icon-pin.svg">
                     58 - 60 Gladesville Rd <br>
                     Hunters Hill NSW 2110
                 </p>
-                <p>
+                <p class="flex gap-[10px]">
                     <img src="images/icons/icon-phone.svg">
-                    <a href="tel:02 8054 2722" class="phoneBtnClicks phn"> 02 8054 2722</a>
+                    <a href="tel:02 8054 2722" class="text-ct hover:text-c2 no-underline phoneBtnClicks phn">02 8054 2722</a>
                 </p>
-                <p>
+                <p class="flex items-center gap-[10px]">
                     <img src="images/icons/icon-email.svg">
-                    <a href="mailto:info@huntershillorthodontics.com.au" class="">info@huntershillorthodontics.com.au</a>
+                    <a href="mailto:info@huntershillorthodontics.com.au" class="text-ct hover:text-c2 no-underline">info@huntershillorthodontics.com.au</a>
                 </p>
-                <h6>
+                <h6 class="relative mb-[9px] text-[16px] flex items-center gap-[10px] font-semibold">
                     <img src="images/icons/icon-open.svg">
                     Opening Times
                 </h6>
-                <dl>
-                    <dt>Monday - Thur</dt>
-                    <dd>8.30am - 5.30pm</dd>
-                    <dt>Fri</dt>
-                    <dd>8.30am - 5.00pm</dd>
+                <dl class="pl-[25px] clear-both overflow-hidden mb-[30px] flex flex-wrap max-w-[330px]">
+                    <dt class="leading-[150%] min-w-[130px] font-normal">Monday - Thur</dt>
+                    <dd class="leading-[150%] pl-0 mb-0">8.30am - 5.30pm</dd>
+                    <dt class="leading-[150%] min-w-[130px] font-normal">Fri</dt>
+                    <dd class="leading-[150%] pl-0 mb-0">8.30am - 5.00pm</dd>
                 </dl>
-    
-                <p class="open_map">
-                    <a href="/" target="_blank">
+
+                <p class="open_map flex items-center gap-[10px] font-semibold">
+                    <a href="/" target="_blank" class="flex items-center gap-[10px] text-ct hover:text-c2 no-underline">
                         <img src="images/icons/icon-directions.svg">
                         Get Directions on Google Maps
                     </a>
                 </p>
             </div>
-    
-            <div class="map-with-tabs">
-                <div class="map-wrap ">
-                    <div class="google_map " id="location_map">
+
+            <div class="map-with-tabs w-1/2 lg:max-[991px]:w-full lg:max-[991px]:static">
+                <div class="map-wrap">
+                    <div class="google_map h-[640px] rounded lg:max-[991px]:h-[450px]" id="location_map">
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </section>
-    <!-- --- End map_wrapper --- -->
 
  
     <!-- Footer -->
@@ -1289,6 +1357,7 @@
         document.body.appendChild(syed_main_css);
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCMSE7I8AeHEbCDdzoCV0E1LM5USKBDNio"></script>
     <script src="js/plugins.js"></script>
 
 </body>

@@ -3,6 +3,17 @@ Watch command
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
 
+dropbox se referrance lekar iski correct tainwind clases add
+
+
+issues
+==============
+before_after
+sbs bgcolor
+
+
+
+
 variable classes
 ====================
 <!-- Colors -->
@@ -22,7 +33,7 @@ variable classes
 
 
 .row
-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40
 
 
 @apply font-f1
