@@ -102,9 +102,16 @@
 }
 
 @layer components {
+    .cnt {
+        max-width: 1304px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .cnt-lg {
         max-width: 1451px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Gradients */
@@ -330,6 +337,42 @@
         height: auto;
         max-width: 100%;
         width: 100%;
+    }
+
+    .why_choose {
+        margin-top: -270px;
+        padding-top: 160px;
+        padding-bottom: 80px;
+    }
+
+    .why_choose .col .img img {
+        width: auto;
+        max-width: 70px;
+        transition: all 0.4s linear;
+    }
+
+    .why_choose .col .img:before {
+        content: "";
+        position: absolute;
+        top: -27px;
+        left: -29px;
+        z-index: 1;
+        background-image: url(../images/why-circle.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 0.35s linear;
+        width: 0;
+        height: 0;
+    }
+
+    .why_choose .col:hover .img:before {
+        width: 119px;
+        height: 119px;
+        transform: scale(1);
+    }
+
+    .why_choose .col:hover .img img {
+        transform: scale(0.9);
     }
     .row{
         margin-left: -20px;

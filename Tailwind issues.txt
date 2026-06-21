@@ -12,6 +12,13 @@ before_after
 sbs bgcolor
 
 
+@media
+==========
+0px – 767px → text-sm
+768px+ → text-base
+1024px+ → text-lg
+1280px+ → text-xl
+1536px+ → text-2xl
 
 
 variable classes
