@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
     <link href="src/output.css" rel="stylesheet">
 
@@ -52,69 +53,71 @@
     </div>
 
     <main class="wrapper">
+ 
+
 
         <!-- Syed GUI - global_header/templates/header -->
-        <header class="header default_sticky " data-top="80">
+        <header class="header default_sticky " data-top="80" style="display: none;">
             <style type="text/css">
-                .edit_mode .header { 
-                    position: static !important; 
+                .edit_mode .header {
+                    position: static !important;
                 }
-            </style>  
-            
+            </style>
+
             <!-- mobile/tablet start -->
             <div class="mobile_header d-block d-lg-none">
                 <!-- <div class="top">
-                    <div class="dropdown mobile-call-menu">
-                        <span class="flex span-toggle-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <em class="icon-left"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></em>
-                            <div class="filter_label">CONTACT</div>
-                            <img src="images/icons/arrow-nav.svg" class="icon-right" alt="">
-                        </span>
-                        <div class="dropdown-menu">
-                            <a href="">Darwin</a>
-                            <a href="">Palmerston</a>
-                        </div>
+                <div class="dropdown mobile-call-menu">
+                    <span class="flex span-toggle-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <em class="icon-left"><i class="fa fa-map-marker-alt" aria-hidden="true"></i></em>
+                        <div class="filter_label">CONTACT</div>
+                        <img src="images/icons/arrow-nav.svg" class="icon-right" alt="">
+                    </span>
+                    <div class="dropdown-menu">
+                        <a href="">Darwin</a>
+                        <a href="">Palmerston</a>
                     </div>
+                </div>
 
-                    <a href="tel:(08) 8982 0400" class="phone phoneBtnClicks flex">
-                        <em><i class="fa fa-phone" aria-hidden="true"></i></em>
-                        (08) 8982 0400
-                    </a>
-                </div> -->
+                <a href="tel:(08) 8982 0400" class="phone phoneBtnClicks flex">
+                    <em><i class="fa fa-phone" aria-hidden="true"></i></em>
+                    (08) 8982 0400
+                </a>
+            </div> -->
                 <div class="bot d-flex justify-content-between align-items-center">
                     <a href="/" class="xs_logo"></a>
 
                     <div class="mobile_links d-flex">
-                        <!-- <a href="/contact" class="btn btn-two ">Call Us</a> -->
+                        <a href="/contact" class="btn btn-two">Contact Us</a>
                         <!-- <a href="/referral" class="btn-green">REFERRALS</a> -->
-                        <a href="tel:(02) 9949 8600" class="btn btn-two no_arrow phoneBtnClicks">
-                            <em><i class="fa fa-phone" aria-hidden="true"></i></em> 
-                            Call Us
-                        </a> 
+                        <!-- <a href="tel:(02) 9949 8600" class="btn btn-two phoneBtnClicks">
+                        <em><i class="fa fa-phone" aria-hidden="true"></i></em> 
+                        Call Us
+                    </a>  -->
                         <!-- <div class="dropdown mobile-call-menu">
-                            <span class="flex span-toggle-dropdown btn btn-two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="filter_label">Call Us</div>
-                                <span class="icon-right">
-                                    <img src="images/icons/arrow-nav-sm.svg" alt="">
-                                </span>
+                        <span class="flex span-toggle-dropdown btn btn-two" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="filter_label">Call Us</div>
+                            <span class="icon-right">
+                                <img src="images/icons/arrow-nav-sm.svg" alt="">
                             </span>
+                        </span>
 
-            
-                            <div class="dropdown-menu">
+        
+                        <div class="dropdown-menu">
 
-                                <a href="tel:(604) 449-0239" class="phone phoneBtnClicks flex">
-                                    
-                                    <span>Vancouver</span>
-                                    (604) 449-0239
-                                </a>
-                                <a href="tel:(604) 276-8225" class="phone phoneBtnClicks flex">
-                                    
-                                    <span>Richmond</span>
-                                    (604) 276-8225
-                                </a>
-                            </div>
-                        </div> -->
-                        
+                            <a href="tel:(604) 449-0239" class="phone phoneBtnClicks flex">
+                                
+                                <span>Vancouver</span>
+                                (604) 449-0239
+                            </a>
+                            <a href="tel:(604) 276-8225" class="phone phoneBtnClicks flex">
+                                
+                                <span>Richmond</span>
+                                (604) 276-8225
+                            </a>
+                        </div>
+                    </div> -->
+
 
                         <a class="xs_main_nav_toggle" data-toggle="collapse" data-target=".xs_main_nav" href="#">
                             <div class="icon-humburger">
@@ -134,30 +137,31 @@
 
             <!-- desktop header start -->
             <div class="desktop_header d-none d-lg-block">
-                <div class="cnt flex justify-content-between">
+                <div class="container flex justify-content-between">
                     <a href="/" class="lg_logo">
                         <img src="images/logo.svg" alt="" title="" />
                     </a>
-                    
+
                     <div>
                         <div class="top">
                             <div class="header_btns">
-                                
+
                                 <!-- <a href="#" class="flex">
-                                    <em><i class="fa fa-envelope" aria-hidden="true"></i></em>
-                                    Contact Us
-                                </a> -->
-                                <a href="#" class="flex">
-                                    <img src="images/icons/icon-dentist.svg" alt="">
-                                    REFERRALS
-                                </a>                            
-                                <a href="tel:(02) 8054 2722" class="phone phoneBtnClicks flex">
+                                <img src="images/icons/icon-dentist.svg" alt="">
+                                REFERRALS
+                            </a>
+                            <a href="#" class="flex">
+                                <em><i class="fa fa-envelope" aria-hidden="true"></i></em>
+                                Contact Us
+                            </a> -->
+
+                                <a href="tel:01202 746428" class="phone phoneBtnClicks flex">
                                     <em><i class="fa fa-phone" aria-hidden="true"></i></em>
-                                    (02) 8054 2722
+                                    01202 746428
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="bot" id="lg-header-top">
                             <div class="syed-main-mega-menu">
                                 <ul class="navigation">
@@ -167,67 +171,83 @@
                                             <li class="has_child">
                                                 <a href="">Clear Aligners</a>
                                                 <ul>
-                                                    <li ><a href="">Invisalign® for Kids</a></li>
-                                                    <li ><a href="">Angel Aligner</a></li>
-                                                    <li ><a href="">Dental Monitoring</a></li>
+                                                    <li><a href="">Invisalign® for Kids</a></li>
+                                                    <li><a href="">Angel Aligner</a></li>
+                                                    <li><a href="">Dental Monitoring</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has_child">
                                                 <a href="">Braces</a>
                                                 <ul>
-                                                    <li ><a href="">LightForce 3D Braces</a></li>
-                                                    <li ><a href="">American Orthotics</a></li>
+                                                    <li><a href="">LightForce 3D Braces</a></li>
+                                                    <li><a href="">American Orthotics</a></li>
                                                 </ul>
                                             </li>
 
                                             <li class="has_child">
                                                 <a href="">Technology</a>
                                                 <ul>
-                                                    <li ><a href="">Invisalign® for Adults</a></li>
-                                                    <li ><a href="">Angel Aligner</a></li>
-                                                    <li ><a href="">Dental Monitoring</a></li>
+                                                    <li><a href="">Invisalign® for Adults</a></li>
+                                                    <li><a href="">Angel Aligner</a></li>
+                                                    <li><a href="">Dental Monitoring</a></li>
                                                 </ul>
                                             </li>
-        
+                                            <li class="has_child">
+                                                <a href="">Braces</a>
+                                                <ul>
+                                                    <li><a href="">LightForce 3D Braces</a></li>
+                                                    <li><a href="">American Orthotics</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="has_child">
+                                                <a href="">Technology</a>
+                                                <ul>
+                                                    <li><a href="">Invisalign® for Adults</a></li>
+                                                    <li><a href="">Angel Aligner</a></li>
+                                                    <li><a href="">Dental Monitoring</a></li>
+                                                </ul>
+                                            </li>
+
                                         </ul>
                                     </li>
 
                                     <li class="">
-                                        <a href="#" target="_self" class="">Smile Gallery</a>
+                                        <a href="#" target="_self" class="">Kids</a>
                                     </li>
                                     <li class="">
                                         <a href="#" target="_self" class="">Costs</a>
                                     </li>
 
                                     <li class="">
-                                        <a href="#" target="_self" class="">For Patients</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Menu Item 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Menu Item 01</a>
-                                            </li>
-                                        </ul>
+                                        <a href="#" target="_self" class="">Success Stories</a>
+                                        <!-- <ul>
+                                        <li>
+                                            <a href="#">Menu Item 01</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Menu Item 01</a>
+                                        </li>
+                                    </ul> -->
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#" target="_self" class="">FOR DENTISTS</a>
                                     </li>
                                     <li class="">
                                         <a href="#" target="_self" class="">About Us</a>
                                     </li>
-                                    <li class="">
-                                        <a href="#" target="_self" class="">Contact Us</a>
-                                        
-                                    </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="btns flex">
-                                <a href="" class="btn btn-two no_arrow">Book a Consultation</a>
+                                <a href="" class="btn btn-two">FREE CONSULTATION</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- desktop header end --> 
+            <!-- desktop header end -->
 
             <!-- sticky btn -->
             <div class="xs_sticky_hero_btn">
@@ -1201,7 +1221,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <!-- sbs_form end -->
 
 
-    <!-- map_wrapper -->
+
     <section class="map_wrapper relative py-[60px] lg:py-[160px] bg-[#F2F2F2] bg-[url('../images/artwork-1.png')] before:content-[''] before:absolute before:bottom-0 before:left-[200px] before:w-[617px] before:h-[481px] before:z-[0] before:bg-[url('../images/artwork-logo.png')] before:bg-contain before:bg-no-repeat"> 
         <div class="flex cnt-lg justify-between items-start">
             <div class="map_details w-1/2 pl-[150px] relative">
@@ -1325,11 +1345,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
             </div>
-        </div>
 
-    </footer>
-
-
+        </footer>
     </main>
 
     <script type="text/javascript">
