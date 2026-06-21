@@ -669,6 +669,17 @@
     
 }
 
+/* Footer */
+@media (max-width: 767px) {
+    .footer .top .col1 {
+        position: relative;
+        bottom: -191px;
+    }
+    .footer .top .img img {
+        height: 37px;
+    }
+}
+
 ._cnt {
     margin-left: calc((100% - 1300px) / 2);
 }
