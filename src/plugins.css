@@ -12579,6 +12579,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .anim_lbl {
   transition: all 0.2s linear;
+  position: relative;
 }
 .anim_lbl label {
   transform-origin: left top;
@@ -12685,6 +12686,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding: 10px 16px;
   height: 48px;
   font-size: 16px;
+  width: 100%;
 }
 .form-control:focus {
   border: 1px solid #E4A600;
@@ -15120,7 +15122,7 @@ header.header {
 }
 #calc_app_ver3 .calc_app_ver2 .input_range, #calc_app_ver4 .calc_app_ver2 .input_range {
   margin: 0;
-  top: 10px;
+  top: -7px;
 }
 #calc_app_ver3 .calc_app_ver2 .input_range:before, #calc_app_ver3 .calc_app_ver2 .input_range:after, #calc_app_ver4 .calc_app_ver2 .input_range:before, #calc_app_ver4 .calc_app_ver2 .input_range:after {
   display: none;

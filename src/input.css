@@ -669,6 +669,33 @@
     
 }
 
+/* Blog Pagination prev/next arrows */
+.page-prev::after,
+.page-next::after {
+    font-family: var(--fa-style-family, "Font Awesome 6 Free");
+    font-weight: 900;
+    content: "\f054";
+    position: absolute;
+    right: 13px;
+    bottom: 50%;
+    transform: translateY(50%);
+    font-size: 19px;
+    color: var(--color-c2);
+    transition: all 0.8s;
+}
+.page-prev::after {
+    content: "\f053";
+    left: 13px;
+    right: auto;
+}
+
+/* Booking Hero — animated label state */
+.booking_hero .error_box label,
+.booking_hero .anim_lbl.animate_lbl label {
+    background-color: #43555f;
+    color: red;
+}
+
 /* Footer */
 @media (max-width: 767px) {
     .footer .top .col1 {

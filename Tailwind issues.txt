@@ -9,6 +9,8 @@ home_hero ki correct tainwind clases add
 
 calc_app_ver3 is section me bootstrap classes ko tailwind se replace
 
+input.css se remove karo aor .html page me tailwind classes add
+
 
 issues
 ==============
