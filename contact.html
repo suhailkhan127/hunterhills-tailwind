@@ -134,7 +134,7 @@
 
         <!-- desktop header start -->
         <div class="desktop_header hidden lg:block">
-            <div class="container flex justify-between">
+            <div class="cnt flex justify-between">
                 <a href="/" class="lg_logo">
                     <img src="images/logo.svg" alt="" title="" />
                 </a>
@@ -243,7 +243,7 @@
 
     <!-- --- Start contact_hero --- -->
     <section class="contact_hero map_wrapper grad3 mb-[60px] lg:mb-[160px] relative py-[120px] max-lg:py-0 before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:z-0 before:bg-[url('../images/artwork-2.png')]">
-        <div class="flex cnt-lg justify-between items-center relative z-[1] max-lg:flex-col">
+        <div class="flex cnt-lg justify-between items-center relative z-[1] max-lg:flex-col max-sm:m-0 max-sm:p-0">
 
             <div class="map_details w-1/2 pl-[77px] max-2xl:pl-[42px] max-lg:pl-[24px] max-lg:w-full max-lg:py-[50px] relative">
                 <div class="title_sec mb-[45px] max-w-[420px]">
@@ -311,10 +311,10 @@
 
 
     <!-- --- Start sbs_form----  -->
-    <section class="sbs_form cnt-lg mb-[60px] lg:mb-[160px]">
-        <div class="flex justify-between items-center relative flex-row-reverse ">
-            <div class="txt-wrap grad2 rounded w-[52%] artwork px-[120px] py-[100px] flex items-center absolute left-0 z-[1] h-[calc(100%-134px)]">
-                <div class="txt max-w-[408px] relative z-[1]">
+    <section class="sbs_form cnt-lg mb-[60px] lg:mb-[160px] relative max-[767px]:m-0">
+        <div class="flex justify-between items-center relative flex-row-reverse max-[991px]:flex-col-reverse max-[991px]:m-0">
+            <div class="txt-wrap grad2 rounded w-[52%] artwork px-[120px] py-[100px] max-[1400px]:px-[90px] flex items-center absolute! left-0 z-[1] h-[calc(100%-134px)] max-[991px]:w-[calc(100%-40px)]! max-[991px]:p-[50px_30px_60px]! max-[991px]:relative! max-[991px]:h-auto! max-[991px]:mt-[-60px]!">
+                <div class="txt lg:max-w-[426px] relative z-[1] w-full">
                     <h3 class="text-c2 mb-[30px]">Book Free consultation </h3> 
                     <h2>Start Your <strong>Smile Transformation!</strong> 
                     </h2>
@@ -322,7 +322,7 @@
                     <a href="" class="btn btn-two">BOOK A Consultation</a>
                 </div>
             </div>
-            <div class="img w-[64%]">
+            <div class="img w-[64%] max-[991px]:w-full!">
                 <img class="lazy rounded" data-src="images/inset-form-bg.jpg" alt="">
             </div>
         </div>
@@ -467,5 +467,12 @@
         document.body.appendChild(syed_main_css);
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCMSE7I8AeHEbCDdzoCV0E1LM5USKBDNio"></script>
+    <script src="js/plugins.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=
+    <script>
+        init_map("inset_map");
+    </script>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

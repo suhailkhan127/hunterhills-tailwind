@@ -11,6 +11,11 @@ calc_app_ver3 is section me bootstrap classes ko tailwind se replace
 
 input.css se remove karo aor .html page me tailwind classes add
 
+mb-[60px] lg:mb-[120px] 2xl:mb-[160px]
+
+home page per container ko cnt replace karo
+
+
 
 issues
 ==============
@@ -36,6 +41,10 @@ booking  ==  complete
 1024px+ → text-lg
 1280px+ → text-xl
 1536px+ → text-2xl
+
+
+max-[1400px]:px-[90px]
+max-[991px]:w-full
 
 
 variable classes
