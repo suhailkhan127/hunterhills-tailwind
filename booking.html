@@ -135,7 +135,7 @@
 
         <!-- desktop header start -->
         <div class="desktop_header hidden lg:block">
-            <div class="container flex justify-between">
+            <div class="cnt flex justify-between">
                 <a href="/" class="lg_logo">
                     <img src="images/logo.svg" alt="" title="" />
                 </a>
@@ -247,7 +247,7 @@
         <div class="flex cnt-lg items-center justify-between max-lg:flex-col-reverse max-lg:m-0">
             <div class="txt-wrap w-[52%] p-[50px_80px] z-[1] max-2xl:p-[30px_40px] max-xl:p-[0px_50px_0px_0px] max-lg:w-full max-lg:p-[50px_30px]">
                 <div class="form-content">
-                    <h1 class="text-cf text-[48px] leading-none capitalize font-f2 mb-[20px] tracking-[-1.92px]">Book a <strong class="block text-cf">free Consultation</strong></h1>
+                    <h1 class="text-cf text-[40px] lg:text-[48px] leading-none capitalize font-f2 mb-[20px] tracking-[-1.92px]">Book a <strong class="block text-cf">free Consultation</strong></h1>
                     <p class="text-cf">From your very first contact with our specialist practice to the creation of your new smile.</p>
                 </div>
 
@@ -264,19 +264,19 @@
                     <div class="form-row">
                         <div class="col-sm-12 form-group anim_lbl">
                             <label class="text-cf">First Name</label>
-                            <input type="text" name="firstname" class="validate[required] form-control border-cf! text-cf placeholder:text-cf/60" title="Please enter first name" required="" />
+                            <input type="text" name="firstname" class="validate[required] form-control border-cf! text-cf! placeholder:text-cf/60" title="Please enter first name" required="" />
                         </div>
                         <div class="col-sm-12 form-group anim_lbl">
                             <label class="text-cf">Last Name</label>
-                            <input type="text" name="lastname" class="validate[required] form-control border-cf! text-cf placeholder:text-cf/60" title="Please enter last name" required="" />
+                            <input type="text" name="lastname" class="validate[required] form-control border-cf! text-cf! placeholder:text-cf/60" title="Please enter last name" required="" />
                         </div>
                         <div class="col-sm-12 form-group anim_lbl">
                             <label class="text-cf">E-mail</label>
-                            <input type="email" name="email" class="validate[required,custom[email]] form-control border-cf! text-cf placeholder:text-cf/60" title="Please enter a valid email address" required="" />
+                            <input type="email" name="email" class="validate[required,custom[email]] form-control border-cf! text-cf! placeholder:text-cf/60" title="Please enter a valid email address" required="" />
                         </div>
                         <div class="col-sm-12 form-group anim_lbl">
                             <label class="text-cf">Phone Number</label>
-                            <input type="tel" name="phone" class="validate[required,maxSize[20]] form-control phone border-cf! text-cf placeholder:text-cf/60" inputmode="numeric" maxlength="20" title="Please enter a valid phone number" required="" />
+                            <input type="tel" name="phone" class="validate[required,maxSize[20]] form-control phone border-cf! text-cf! placeholder:text-cf/60" inputmode="numeric" maxlength="20" title="Please enter a valid phone number" required="" />
                         </div>
 
                         <!-- <div class="col-sm-12">
@@ -307,7 +307,7 @@
                         </div> -->
                     </div>
                     <button type="submit" class="btn btn-two">BOOK A free CONSULTATION</button>
-                    <p class="privacy text-cf">For further information about how we use your data, please see our <a title="Privacy policy" href="/privacy-policy/" target="_blank" class="text-c2 underline hover:no-underline">privacy policy</a>. </p>
+                    <p class="privacy text-cf">For further information about how we use your data, please see our <a title="Privacy policy" href="/privacy-policy/" target="_blank" class="text-c2! underline! hover:no-underline!">privacy policy</a>. </p> 
                     <input type="text" name="fake" id="fake" class="fake" />
                     <input type="hidden" name="action_path" value="/application/themes/_spam_protect.php" class="action_path" />
                     <input type="hidden" name="thanks" value="/free-consultation-thank-you/" class="thanks" />
@@ -330,11 +330,11 @@
     <section class="what_happens relative py-[160px] max-2xl:py-[110px] max-xl:py-[70px]">
         <div class="cnt relative z-[2]">
             <div class="title_sec mb-[70px] max-w-[880px]">
-                <h2 class="mb-[15px]"><strong class="inline">What happens</strong> at your appointment?</h2>
+                <h2 class="mb-[15px]"><strong class="lg:inline block">What happens</strong> at your appointment?</h2>
                 <p>Dolor auctor orci euismod eu mauris a. Quis pulvinar sem scelerisque felis eu faucibus turpis blandit vehicula. Nisl velit mauris pharetra nunc sollicitudin felis id vulputate. Sit vel proin sit varius pharetra accumsan.</p>
             </div>
             <div class="flex flex-wrap gap-y-[35px]">
-                <div class="w-1/4 max-lg:w-1/2 px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-1.svg" />
@@ -344,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-2.svg" />
@@ -354,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-3.svg" />
@@ -364,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-4.svg" />
@@ -377,17 +377,17 @@
             </div>
 
             <div class="btns mt-[40px]">
-                <a class="btn" href="#_body">BOOK Free CONSULTATION</a>
+                <a class="btn btn-two goto" href="#_body">BOOK Free CONSULTATION</a>
             </div>
         </div>
     </section>
     <!--End what_happens-->
 
  
-    <!-- map_wrapper -->
-    <section class="map_wrapper relative py-[60px] lg:py-[160px] bg-[#F2F2F2] bg-[url('../images/artwork-1.png')] before:content-[''] before:absolute before:bottom-0 before:left-[200px] before:w-[617px] before:h-[481px] before:z-[0] before:bg-[url('../images/artwork-logo.png')] before:bg-contain before:bg-no-repeat"> 
-        <div class="flex cnt-lg justify-between items-start">
-            <div class="map_details w-1/2 pl-[150px] relative">
+    <!-- map_wrapper --> 
+    <section class="map_wrapper relative py-[0px] 2xl:py-[160px] max-[1500px]:py-[120px] max-[991px]:py-[0px] bg-[#F2F2F2] bg-[url('../images/artwork-1.png')] before:content-[''] before:absolute before:bottom-0 before:left-[200px] before:w-[617px] before:h-[481px] before:z-[0] before:bg-[url('../images/artwork-logo.png')] before:bg-contain before:bg-no-repeat"> 
+        <div class="flex cnt-lg justify-between items-center max-[991px]:flex-col max-[991px]:m-0">
+            <div class="map_details w-1/2 pl-[150px] max-[1500px]:pl-[35px] relative max-[991px]:p-[50px_25px_40px] max-[991px]:w-full">
                 <div class="title_sec mb-[45px] max-w-[420px]">
                     <h2 class="">Visit Us</h2>
                     <p class="">Reach out to our team in Hunters Hill today to book an appointment or get answers to your questions.</p>
@@ -439,7 +439,7 @@
                 </p>
             </div>
 
-            <div class="map-with-tabs w-1/2 lg:max-[991px]:w-full lg:max-[991px]:static">
+            <div class="map-with-tabs w-1/2 max-[991px]:w-full max-[991px]:mr-0 max-[991px]:static">
                 <div class="map-wrap">
                     <div class="google_map h-[640px] rounded lg:max-[991px]:h-[450px]" id="location_map">
                     </div>
@@ -451,9 +451,9 @@
 
  
     <!-- Footer -->
-        <footer class="footer pt-[60px] lg:pt-[160px] pb-[30px] lg:pb-[100px]">
+    <footer class="footer pt-[60px] 2xl:pt-[160px] pb-[30px] lg:pb-[100px] max-[1550px]:pt-[80px] max-[1550px]:pb-[80px] max-[991px]:pt-[50px] max-[991px]:pb-[90px]">
         <div class="cnt">
-            <div class="top pb-[27px] border-b border-c1">
+            <div class="top pb-[27px] border-b border-c1 max-[767px]:w-full max-[767px]:p-0 max-[767px]:mb-[12px]">
                 <div class="flex justify-between items-center max-sm:flex-row-reverse">
                     <div class="col1">
                         <div class="img">
@@ -528,11 +528,4 @@
 
     <script>
         $(document).ready(function () {
-            _btns = ".what_happens .btn ";
-            $(_btns).removeAttr("href");
-            $(_btns).attr("href", "#_body");
-            $(_btns).addClass("btn-two goto");
-        });
-    </script>
-</body>
-</html>
+            _bt    

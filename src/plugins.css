@@ -12759,7 +12759,6 @@ textarea {
 }
 .forms-tio button {
   margin: 16px 0 5px;
-  background: none;
 }
 .forms-tio .animate_lbl label {
   background-color: #fff !important;
@@ -13181,8 +13180,13 @@ select {
 .form-row {
   margin: 0 -20px;
 }
-.form-row > [class*=col-] {
+.form-row > [class*=col-], .form-row .form-group {
   padding: 0 20px;
+}
+@media (max-width: 1199px) {
+  .form-row {
+    flex-wrap: wrap;
+  }
 }
 
 .extra_option {

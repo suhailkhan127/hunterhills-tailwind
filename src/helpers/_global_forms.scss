@@ -238,7 +238,7 @@ textarea {
 
     button {
         margin: 16px 0 5px;
-        background: none;
+        // background: none;
     }
 
     .animate_lbl {
@@ -773,8 +773,11 @@ select {
 .form-row {
     margin: 0 -20px;
 
-    >[class*="col-"] {
+    >[class*="col-"], .form-group {
         padding: 0 20px;
+    }
+    @media(max-width:1199px) {
+        flex-wrap: wrap;
     }
 }
 
