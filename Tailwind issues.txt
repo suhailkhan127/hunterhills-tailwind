@@ -9,7 +9,7 @@ home_hero ki correct tainwind clases add
 
 calc_app_ver3 is section me bootstrap classes ko tailwind se replace
 
-input.css se remove karo aor .html page me tailwind classes add
+input.css se remove karo aor tailwind classes add
 
 mb-[60px] lg:mb-[120px] 2xl:mb-[160px]
 
@@ -27,11 +27,11 @@ referral.html = date picker show nahi horaha
 pages
 =============
 booking  ==  complete
-  ==  
-  ==  
-  ==  
-  ==  
-  ==  
+contact  ==  complete  
+  ==  complete
+  ==  complete
+  ==  complete
+  ==  complete
 
 
 @media
