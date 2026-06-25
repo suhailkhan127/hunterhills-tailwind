@@ -28,8 +28,9 @@ pages
 =============
 booking  ==  complete
 contact  ==  complete  
-  ==  complete
-  ==  complete
+Blog  ==  complete
+blog-details  ==  complete
+referral  ==  complete
   ==  complete
   ==  complete
 

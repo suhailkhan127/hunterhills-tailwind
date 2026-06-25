@@ -404,11 +404,6 @@
 }
 
 @layer utilities {
-    .inset_hero {
-        background: linear-gradient(180deg, #455761 34.62%, #334148 100%);
-        position: relative;
-        margin-bottom: 200px;
-    }
 
     .inset_hero::before {
         position: absolute;
@@ -743,3 +738,8 @@
     }
 }
 
+@media (max-width: 991px) {
+    .blog_details:before {
+        height: 520px;
+    }
+}
