@@ -333,8 +333,8 @@
                 <h2 class="mb-[15px]"><strong class="lg:inline block">What happens</strong> at your appointment?</h2>
                 <p>Dolor auctor orci euismod eu mauris a. Quis pulvinar sem scelerisque felis eu faucibus turpis blandit vehicula. Nisl velit mauris pharetra nunc sollicitudin felis id vulputate. Sit vel proin sit varius pharetra accumsan.</p>
             </div>
-            <div class="flex flex-wrap gap-y-[35px]">
-                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
+            <div class="flex flex-wrap gap-y-[20px]">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-0 lg:px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-1.svg" />
@@ -344,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-0 lg:px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-2.svg" />
@@ -354,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-0 lg:px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-3.svg" />
@@ -364,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-4">
+                <div class="w-1/4 max-lg:w-1/2 max-sm:w-full px-0 lg:px-4">
                     <div class="box">
                         <p class="img mb-[20px]">
                             <img class="lazy w-auto" data-src="images/icons/happens-4.svg" />
@@ -521,11 +521,22 @@
         document.body.appendChild(syed_main_css);
     </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyCMSE7I8AeHEbCDdzoCV0E1LM5USKBDNio"></script>
-
     <script src="js/plugins.js"></script>
 
     <script>
         $(document).ready(function () {
-            _bt    
+            _btns = ".what_happens .btn ";
+            
+            $(_btns).removeAttr("href");
+
+            $(_btns).attr("href", "#_body");
+
+            $(_btns).addClass("btn-two goto");
+
+            // $('.sbs_form.flip .btn').removeClass("goto");
+        });
+    </script>
+
+</body>
+</html>

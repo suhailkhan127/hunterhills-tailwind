@@ -20,7 +20,8 @@ home page per container ko cnt replace karo
 issues
 ==============
 before_after
-sbs bgcolor
+team modal jquery show
+team modal responsive
 referral.html = date picker show nahi horaha 
 
 
@@ -33,6 +34,14 @@ blog-details  ==  complete
 referral  ==  complete
   ==  complete
   ==  complete
+  ==  complete
+  ==  complete
+
+
+index
+cost
+location
+inset
 
 
 @media
