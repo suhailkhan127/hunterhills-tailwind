@@ -294,6 +294,25 @@
         }
 
     }
+    .btn-outline-yellow {
+        border: 1px solid #E4A600;
+        color: #E4A600;
+        background: transparent;
+        &:before {
+            background: #E4A600;
+        }
+        &:after {
+            border-color: #E4A600;
+        }
+        &:hover{
+            &:before {
+                background: #334148;
+            }
+            &:after {
+                border-color: --var(--color-c1);
+            }
+        }
+    }
  
     .link {
         position: relative;
