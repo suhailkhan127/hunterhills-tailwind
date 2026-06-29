@@ -240,85 +240,90 @@
     <div class="psuedo_header"></div>
     <!-- Syed GUI - global_header/templates/header -->
 
-    <!-- --- Start contact_hero --- -->
-    <div class="cnt-lg">
-        <section class="location_hero map_wrapper">
-            <div class="flex">
-                    
-                <div class="map_details">
-                    <div class="title_sec">
-                        <h1>Visit Us</h1>
-                        <p>Massa pharetra habitant ut mauris facilisis commodo venenatis. Lectus sit eget aliquet quam gravida purus non sit velit. Ante viverra euismod.</p>
-                    </div>
+    <!-- --- Start location_hero --- -->
+    <section class="location_hero map_wrapper grad3 mb-[60px] lg:mb-[160px] relative py-[120px] max-lg:py-0 before:content-[''] before:absolute before:inset-0 before:w-full before:h-full before:z-0 before:bg-[url('../images/artwork-2.png')]">
+        <div class="flex cnt-lg justify-between items-center relative z-[1] max-lg:flex-col max-sm:m-0 max-sm:p-0">
 
-                    <h4>Poole Orthodontics</h4> 
-
-                    <p class="">
-                        <em class="fa-solid fa-location-pin" aria-hidden="true"></em>
-                        38 Lower Blandford Road <br>Poole, Dorset, BH18 8NX
-                    </p>
-
-                    <p class="">
-                        <em class="fa-solid fa-phone" aria-hidden="true"></em>
-                        <a href="tel:0120 2612 787" class="phoneBtnClicks phn"> 0120 2612 787</a>
-                    </p>
-                    <p class="">
-                        <em class="fa-solid fa-envelope" aria-hidden="true"></em>
-                        <a href="mailto:info.pooleorthodontics@gmail.com" class="">info.pooleorthodontics@gmail.com</a>
-                    </p>
-        
-                    
-                    <h6>
-                        <em class="fa fa-clock" aria-hidden="true"></em>
-                        Opening Hours
-                    </h6>
-                    <dl>
-                        <dt>Monday - Friday</dt>
-                        <dd>09:00am - 18:00pm</dd>
-                        <dt>Saturday</dt>
-                        <dd>9:00am to 15:00pm</dd>
-                    </dl>
-
-                    <p class="open_map">
-                        <a href="#" target="_blank">
-                            <img src="images/icons/icon-open.svg" />
-                            Open in Google Maps
-                        </a>
-                    </p>
-
+            <div class="map_details w-1/2 pl-[77px] max-2xl:pl-[42px] max-lg:pl-[24px] max-lg:w-full max-lg:py-[50px] relative">
+                <div class="title_sec mb-[45px] max-w-[420px]">
+                    <h1 class="text-[48px] leading-none capitalize font-f2 text-cf! mb-[20px] tracking-[-1.92px]">Contact Us</h1>
+                    <p class="text-cf">Massa pharetra habitant ut mauris facilisis commodo venenatis. Lectus sit eget aliquet quam gravida purus non sit velit. Ante viverra euismod.</p>
                 </div>
 
-                <div class="map-with-tabs">
-                    <div class="map-wrap"> 
-                        <div class="google_map" id="inset_map"></div>
+                <div class="dropdown hidden">
+                    <a class="btn" href="javascript:void(0)" id="location_btn" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> Select A Location<em class="fa fa-chevron-down"></em> </a>
+                    <div class="dropdown-menu" aria-labelledby="location_btn">
+                        <ul class="nav nav-pills map_cords">
+                            <li class="nav-item loc" role="presentation" data-lat="51.48130736915778"
+                                data-lng="-2.6342748572519485">
+                                <a data-toggle="pill" data-target="#loc-tab-1" role="tab" aria-selected="true"
+                                    class="active">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+
+                <p class="relative pl-[25px] mb-[24px] text-cf">
+                    <img src="images/icons/icon-pin.svg" class="absolute left-0 top-[2px]">
+                    58 - 60 Gladesville Rd <br>
+                    Hunters Hill NSW 2110
+                </p>
+                <p class="relative pl-[25px] mb-[24px] text-cf">
+                    <img src="images/icons/icon-phone.svg" class="absolute left-0 top-[2px]">
+                    <a href="tel:02 8054 2722" class="phoneBtnClicks phn text-cf hover:text-c2"> 02 8054 2722</a>
+                </p>
+                <p class="relative pl-[25px] mb-[24px] text-cf">
+                    <img src="images/icons/icon-email.svg" class="absolute left-0 top-[2px]">
+                    <a href="mailto:info@huntershillorthodontics.com.au" class="text-cf hover:text-c2">info@huntershillorthodontics.com.au</a>
+                </p>
+                <h6 class="relative pl-[25px] mb-[9px] text-[16px] text-cf">
+                    <img src="images/icons/icon-open.svg" class="absolute left-0 top-[2px]">
+                    Opening Times
+                </h6>
+                <dl class="pl-[25px] mb-[24px]">
+                    <dt class="float-left clear-left w-[130px] font-normal text-cf">Monday - Thur</dt>
+                    <dd class="ml-[130px] text-cf">8.30am - 5.30pm</dd>
+                    <dt class="float-left clear-left w-[130px] font-normal text-cf">Fri</dt>
+                    <dd class="ml-[130px] text-cf">8.30am - 5.00pm</dd>
+                </dl>
+
+                <p class="open_map font-semibold">
+                    <a href="/" target="_blank" class="text-cf hover:text-c2 flex items-center gap-[8px]">
+                        <img src="images/icons/icon-directions.svg">
+                        Get Directions on Google Maps
+                    </a>
+                </p>
+            </div>
+
+            <div class="map-with-tabs w-1/2 max-lg:w-full">
+                <div class="map-wrap">
+                    <div class="google_map h-[640px] xl:h-[782px] rounded-none" id="inset_map"></div>
                 </div>
             </div>
-        </section>
-    </div>
-    <!-- --- End contact_hero --- -->
+
+        </div>
+    </section>
+    <!-- --- End location_hero --- -->
 
 
     <!-- --- Start sbs_form----  -->
-    <section class="sbs_form cnt-lg">
-        <div class="flex ">
-            <div class="img" style="background-image: url(images/inset-form-bg.jpg);">
-                <img class="lazy" data-src="images/inset-form-sm.jpg" alt="">
-            </div>
-            <div class="txt-wrap">
-                <div class="txt">
-                    <h3>Book Free consultation </h3> 
+    <section class="sbs_form cnt-lg mb-[60px] lg:mb-[160px] relative max-[767px]:mx-0!">
+        <div class="flex justify-between items-center relative flex-row-reverse max-[991px]:flex-col-reverse max-[991px]:m-0">
+            <div class="txt-wrap grad2 rounded w-[52%] artwork px-[120px] py-[100px] max-[1400px]:px-[90px] flex items-center absolute! left-0 z-[1] h-[calc(100%-134px)] max-[991px]:w-[calc(100%-40px)]! max-[991px]:p-[50px_30px_60px]! max-[991px]:relative! max-[991px]:h-auto! max-[991px]:mt-[-60px]!">
+                <div class="txt lg:max-w-[426px] relative z-[1] w-full">
+                    <h3 class="text-c2 mb-[30px]">Book Free consultation </h3> 
                     <h2>Start Your <strong>Smile Transformation!</strong> 
                     </h2>
                     <p>From your very first contact with our specialist practice to the creation of your new smile, our Treatment Coordinator will be available to offer support at every stage of your orthodontic journey.</p>
-                    <a href="" class="btn btn-two">BOOK A Free Consultation</a>
+                    <a href="" class="btn btn-two">BOOK A Consultation</a>
                 </div>
             </div>
-            
+            <div class="img w-[64%] max-[991px]:w-full!">
+                <img class="lazy rounded" data-src="images/inset-form-bg.jpg" alt="">
+            </div>
         </div>
-    </section>
-
-    <div class="space_botm"></div>
+    </section>    
     <!-- sbs_form end -->
 
 

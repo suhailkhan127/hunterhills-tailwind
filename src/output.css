@@ -227,9 +227,6 @@
   .end {
     inset-inline-end: var(--spacing);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
@@ -720,9 +717,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
@@ -732,20 +726,11 @@
   .w-1\/4 {
     width: calc(1 / 4 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3 / 4 * 100%);
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
   .w-5\/12 {
     width: calc(5 / 12 * 100%);
-  }
-  .w-7 {
-    width: calc(var(--spacing) * 7);
   }
   .w-7\/12 {
     width: calc(7 / 12 * 100%);
@@ -840,13 +825,6 @@
   .table-fixed {
     table-layout: fixed;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -858,10 +836,6 @@
   .\!-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1) !important;
     translate: var(--tw-translate-x) var(--tw-translate-y) !important;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
@@ -967,9 +941,6 @@
   }
   .border-c2 {
     border-color: var(--color-c2);
-  }
-  .border-cf {
-    border-color: var(--color-cf);
   }
   .border-cf\! {
     border-color: var(--color-cf) !important;
@@ -1371,9 +1342,6 @@
   .no-underline {
     text-decoration-line: none;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .underline\! {
     text-decoration-line: underline !important;
   }
@@ -1416,10 +1384,6 @@
   }
   .backdrop-blur-\[10px\] {
     --tw-backdrop-blur: blur(10px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -2005,11 +1969,6 @@
       padding-bottom: 90px;
     }
   }
-  .max-\[767px\]\:m-0 {
-    @media (width < 767px) {
-      margin: calc(var(--spacing) * 0);
-    }
-  }
   .max-\[767px\]\:mx-0 {
     @media (width < 767px) {
       margin-inline: calc(var(--spacing) * 0);
@@ -2038,12 +1997,6 @@
   .max-\[767px\]\:w-full {
     @media (width < 767px) {
       width: 100%;
-    }
-  }
-  .max-\[767px\]\:border-0 {
-    @media (width < 767px) {
-      border-style: var(--tw-border-style);
-      border-width: 0px;
     }
   }
   .max-\[767px\]\:border-0\! {
@@ -2679,11 +2632,6 @@
         --tw-content: '';
         content: var(--tw-content);
       }
-    }
-  }
-  .sm\:mb-\[0px\] {
-    @media (width >= 40rem) {
-      margin-bottom: 0px;
     }
   }
   .md\:grid-cols-2 {
@@ -3468,6 +3416,23 @@
         max-width: 360px;
       }
     }
+  }
+  .before_after .before:before, .before_after .after:before, .before_after .panel-left:before, .before_after .panel-right:before {
+    content: "Before";
+    color: #fff;
+    position: absolute;
+    bottom: 12px;
+    left: 23px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 150%;
+    z-index: 1;
+  }
+  .before_after .after:before, .before_after .panel-right:before {
+    content: "After";
+    left: auto;
+    right: 23px;
   }
   .back-btn {
     padding: 13px 0px 14px 25px;

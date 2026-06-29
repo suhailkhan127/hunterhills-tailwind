@@ -601,6 +601,25 @@
             }
         }
     }
+    .before_after .before:before, .before_after .after:before, .before_after .panel-left:before, .before_after .panel-right:before {
+        content: "Before";
+        color: #fff;
+        position: absolute;
+        bottom: 12px;
+        left: 23px;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 150%;
+        z-index: 1;
+    }
+    .before_after .after:before, .before_after .panel-right:before {
+        content: "After";
+        left: auto;
+        right: 23px;
+    }
+
+
 
     .back-btn {
         padding: 13px 0px 14px 25px;
