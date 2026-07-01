@@ -552,6 +552,14 @@
         span{
             display: none;
         }
+        @media all and (max-width: 2000px) {
+            width: 519px !important;
+        
+            .panel-left img,
+            .panel-right img {
+                max-width: 519px; 
+            }
+        }
 
         @media all and (max-width: 1550px) {
             width: 515px !important;
